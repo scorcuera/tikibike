@@ -18,7 +18,7 @@ const MainNavigation = (props) => {
  
 
     return (
-        <div>
+        <div style={{position: "sticky", top:"0%", zIndex: "1"}}>
         <nav className={classes.nav}>
             <div>
                 <Link to="/" onClick={redirectHome}>
