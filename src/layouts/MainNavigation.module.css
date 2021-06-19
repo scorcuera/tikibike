@@ -5,7 +5,7 @@
 
 .nav{
     height: 10vh;
-    padding: 0 0.5rem;
+    padding-left:  0.5rem;
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -43,6 +43,11 @@
 }
 
 .hamburger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 4rem;
     color: #043C53;
     cursor: pointer;
 }

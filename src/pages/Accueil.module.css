@@ -58,7 +58,10 @@
     position: absolute;
     transform: translate(0%, -50%);
     background: #0489A8;
-    color: #FFFFF7;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.button_link{
+    color: #FFFFF7;
 }
 

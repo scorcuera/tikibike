@@ -1,6 +1,7 @@
 import classes from "./Accueil.module.css";
 import backgroundImage from "../img/background-img.jpg";
 import {IoIosArrowDown} from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Accueil = () => {
     return (
@@ -15,12 +16,13 @@ const Accueil = () => {
           alt="Photo by Lachlan Cruickshank on Unsplash"
         />
         <div className={classes.footer_layer}>
-            <a className={classes.button_footer} href="#">
-                <IoIosArrowDown size={48} />
+          <Link className={classes.button_footer} to="/sorties">
+            <a className={classes.button_link}>
+              <IoIosArrowDown size={48} />
             </a>
+          </Link>
         </div>
         <div className={classes.background_layer}></div>
-
       </div>
     );
 }

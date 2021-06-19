@@ -1,4 +1,5 @@
 import  { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+// import {AnimatePresence, motion} from "framer-motion";
 import './App.css';
 import Sorties from './pages/Sorties';
 import Stages from './pages/Stages';
@@ -7,6 +8,7 @@ import Contact from './pages/Contact';
 import Gallerie from './pages/Gallerie';
 import MainNavigation from './layouts/MainNavigation';
 import Accueil from './pages/Accueil';
+
 
 
 function App() {

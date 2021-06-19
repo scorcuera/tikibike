@@ -6,10 +6,17 @@ import { Link } from "react-router-dom";
 
 const MainNavigation = (props) => {
     
+    const clickedHamburgerColor = {color: "#F3E622", backgroundColor: "#043C53"}
+
   
     const [showHamburgerItems, setHamburgerItems] = useState(false)
+   
+
     const handleHamburgerMenu = () => setHamburgerItems(!showHamburgerItems) 
     const redirectHome = () => setHamburgerItems(false);
+    
+ 
+
     return (
         <div>
         <nav className={classes.nav}>
@@ -22,7 +29,7 @@ const MainNavigation = (props) => {
             <div>
                <h3 className={classes.nav_title}></h3>
             </div>
-            <div className={classes.hamburger}>
+            <div className={classes.hamburger} style={showHamburgerItems? clickedHamburgerColor : null}>
                 <GiHamburgerMenu size={28} onClick={handleHamburgerMenu} />
             </div>
         </nav>
