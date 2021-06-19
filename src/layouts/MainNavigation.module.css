@@ -1,0 +1,49 @@
+.logo_img{
+    width: 2.5rem;
+
+}
+
+.nav{
+    height: 10vh;
+    padding: 0 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #FFFFF7;
+}
+
+.navBar{
+    height: 90vh;
+    width:100vw;
+    background-color: #043C53;
+}
+
+.nav_title{
+    color: #0489A8;
+    font-size: 1.5rem;
+}
+
+.nav_items{
+    font-size: 1.5rem;
+    display: flex;
+    padding-left: 1.5rem;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nav_item{
+    font-weight: 600;
+    color: #F3E622;
+}
+
+.nav_item:hover{
+    
+    color:#FFFFF7;
+}
+
+.hamburger{
+    color: #043C53;
+    cursor: pointer;
+}
+

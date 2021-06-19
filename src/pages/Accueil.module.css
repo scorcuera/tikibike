@@ -1,0 +1,64 @@
+.big_container{
+    position: relative;
+    background-color: #043C53; 
+    height: 90vh;
+    max-width: 100vw;
+}
+
+.background_img{
+   
+    width: 100%;
+    height: 90vh;
+    object-fit:cover;
+    object-position: 70% 0%;
+    
+}
+
+.background_layer{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    background-color: rgb(4, 60, 83, 0.3);
+}
+
+.main_text{
+    z-index: 2;
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    top: 10%;
+    left: 5%;
+}
+
+.brand_name{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+
+.footer_layer{
+    z-index: 3;
+    background-color: rgb(255, 255, 247, 0.4);
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    bottom:0%;
+    width: 100%;
+    height: 8vh;
+
+}
+
+.button_footer{
+    z-index: 4;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    transform: translate(0%, -50%);
+    background: #0489A8;
+    color: #FFFFF7;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
