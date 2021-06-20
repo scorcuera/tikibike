@@ -24,7 +24,7 @@ const Location = () => {
               <p>VTT eléctrique</p>
               <p>VTT enfants</p>
               <p>VTT tandem</p>
-              <p>
+              <p style={{paddingTop: "1rem"}}>
                 Equipements: protection, siége bébé… Les prix comprennent
                 casque, gants et Kit de réparation.
               </p>

@@ -22,7 +22,7 @@ const MainNavigation = (props) => {
         <nav className={classes.nav}>
             <div>
                 <Link to="/" onClick={redirectHome}>
-                <img className={classes.logo_img} src={logo} alt="" />
+                <img className={classes.logo_img} src={logo} alt="logo tikibike" />
                 </Link>
                 
             </div>
