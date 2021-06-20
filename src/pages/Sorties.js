@@ -63,8 +63,7 @@ const Sorties = () => {
             </div>
             <div className={classes.paragraph}>
               <p className={classes.paragraph_phrase}>
-                N'hésitez pas à nous contacter pour des demandes particulières
-                entre parenthèses initiation vélo de route vélo électrique...)
+                N'hésitez pas à nous contacter pour des demandes particulières (initiation vélo de route vélo électrique...)
               </p>
             </div>
           </div>

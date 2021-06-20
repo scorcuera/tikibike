@@ -1,11 +1,15 @@
-
+import classes from "./Stages.module.css";
 
 const Stages = () => {
     return (
-        <div>
-            <h1>Voici la page por les Stages</h1>
+      <div className={classes.big_container}>
+        <div className={classes.container_1}>
+          <div className={classes.section_title}>
+            <h3>Stages</h3>
+          </div>
         </div>
-    )
+      </div>
+    );
 }
 
 export default Stages

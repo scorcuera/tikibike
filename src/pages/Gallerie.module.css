@@ -1,0 +1,25 @@
+.big_container{
+    position: relative;
+    background-color: #043C53; 
+    height: auto;
+    max-width: 100vw;
+}
+
+.container_1{
+    height: 90vh;
+    color: #FFFFF7;
+    display: flex;
+    flex-direction:column;
+   
+}
+
+.section_title{
+    
+    margin: 0 auto;
+    padding: 1.5rem
+    0rem 0.5rem 0rem;
+    font-size: 2rem;
+    color: #F3E622;
+    
+
+}
