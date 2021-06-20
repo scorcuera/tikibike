@@ -28,7 +28,8 @@
 
 
 .logo_img{
-    width: 8rem;
+    padding-bottom: 0.8rem;
+    width: 7rem;
 
 }
 
@@ -49,7 +50,8 @@
     align-content: stretch;
     justify-content: center;
     align-items: center;
-    line-height: 2rem;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
 }
 
 .paragraph_phrase{
