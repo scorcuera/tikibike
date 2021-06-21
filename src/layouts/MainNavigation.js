@@ -33,9 +33,9 @@ const MainNavigation = (props) => {
                 <GiHamburgerMenu size={28} onClick={handleHamburgerMenu} />
             </div>
         </nav>
-        <div>
+        
             {showHamburgerItems? <NavItems onClick={handleHamburgerMenu} /> : null}
-        </div>
+        
         </div>
     )
 }
@@ -57,7 +57,7 @@ const NavItems = (props) => {
                     <li className={classes.nav_item}>Contact</li>
                 </Link>
                 <Link to="/gallerie" onClick={props.onClick}>
-                    <li className={classes.nav_item}>Gallerie de photos</li>
+                    <li className={classes.nav_item}>Galerie de photos</li>
                 </Link>
                 
             </ul>

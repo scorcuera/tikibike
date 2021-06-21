@@ -1,6 +1,7 @@
+
 import images from "./imageLoader";
 
-const stockImages = [
+export const stockImages = [
     {
         id: 1,
         src: images.allMountain1,
@@ -98,4 +99,3 @@ const stockImages = [
     }
 ]
 
-export default stockImages;
