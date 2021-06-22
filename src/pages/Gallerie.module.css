@@ -23,3 +23,30 @@
     
 
 }
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.grid_item {
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+
+.grid_item img {
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    filter: brightness(0.5) grayscale(1);
+    transition: all ease 0.8s;
+}
+
+.grid_item img:hover {
+    filter: none;
+    transform: scale(1.04);
+}

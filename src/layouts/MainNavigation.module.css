@@ -59,3 +59,37 @@
     cursor: pointer;
 }
 
+.navbar_pc{
+    display:none;
+}
+
+@media screen and (min-width: 767px){
+    .hamburger_icon{
+        display:none;
+    }
+
+    .hamburger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 30rem;
+        color: #043C53;
+        cursor:auto;
+    }
+
+    .navbar_pc{
+        display:flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .navbar_pc_item:hover{
+       color:#F3E622;
+       transition: all ease 0.5s;
+    }
+
+
+   
+}
+

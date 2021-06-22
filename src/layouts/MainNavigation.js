@@ -30,7 +30,14 @@ const MainNavigation = (props) => {
                <h3 className={classes.nav_title}></h3>
             </div>
             <div className={classes.hamburger} style={showHamburgerItems? clickedHamburgerColor : null}>
-                <GiHamburgerMenu size={28} onClick={handleHamburgerMenu} />
+                <GiHamburgerMenu className={classes.hamburger_icon} size={28} onClick={handleHamburgerMenu} />
+                <ul className={classes.navbar_pc}>
+                    <li className={classes.navbar_pc_item}>Sorties</li>
+                    <li className={classes.navbar_pc_item}>Stages</li>
+                    <li className={classes.navbar_pc_item}>Location</li>
+                    <li className={classes.navbar_pc_item}>Contact</li>
+                    <li className={classes.navbar_pc_item}>Accueil</li>
+                </ul>
             </div>
         </nav>
         
