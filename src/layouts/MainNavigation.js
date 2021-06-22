@@ -18,33 +18,52 @@ const MainNavigation = (props) => {
  
 
     return (
-        <div style={{position: "sticky", top:"0%", zIndex: "1"}}>
+      <div style={{ position: "sticky", top: "0%", zIndex: "1" }}>
         <nav className={classes.nav}>
-            <div>
-                <Link to="/" onClick={redirectHome}>
-                <img className={classes.logo_img} src={logo} alt="logo tikibike" />
-                </Link>
-                
-            </div>
-            <div>
-               <h3 className={classes.nav_title}></h3>
-            </div>
-            <div className={classes.hamburger} style={showHamburgerItems? clickedHamburgerColor : null}>
-                <GiHamburgerMenu className={classes.hamburger_icon} size={28} onClick={handleHamburgerMenu} />
-                <ul className={classes.navbar_pc}>
-                    <li className={classes.navbar_pc_item}>Sorties</li>
-                    <li className={classes.navbar_pc_item}>Stages</li>
-                    <li className={classes.navbar_pc_item}>Location</li>
-                    <li className={classes.navbar_pc_item}>Contact</li>
-                    <li className={classes.navbar_pc_item}>Accueil</li>
-                </ul>
-            </div>
+          <div>
+            <Link to="/" onClick={redirectHome}>
+              <img
+                className={classes.logo_img}
+                src={logo}
+                alt="logo tikibike"
+              />
+            </Link>
+          </div>
+          <div>
+            <h3 className={classes.nav_title}></h3>
+          </div>
+          <div
+            className={classes.hamburger}
+            style={showHamburgerItems ? clickedHamburgerColor : null}
+          >
+            <GiHamburgerMenu
+              className={classes.hamburger_icon}
+              size={28}
+              onClick={handleHamburgerMenu}
+            />
+            <ul className={classes.navbar_pc}>
+              <Link to="/sorties">
+                <li className={classes.navbar_pc_item}>Sorties</li>
+              </Link>
+              <Link to="/stages">
+                <li className={classes.navbar_pc_item}>Stages</li>
+              </Link>
+              <Link to="/location">
+                <li className={classes.navbar_pc_item}>Location</li>
+              </Link>
+              <Link to="/contact">
+                <li className={classes.navbar_pc_item}>Contact</li>
+              </Link>
+              <Link to="/">
+                <li className={classes.navbar_pc_item}>Accueil</li>
+              </Link>
+            </ul>
+          </div>
         </nav>
-        
-            {showHamburgerItems? <NavItems onClick={handleHamburgerMenu} /> : null}
-        
-        </div>
-    )
+
+        {showHamburgerItems ? <NavItems onClick={handleHamburgerMenu} /> : null}
+      </div>
+    );
 }
 
 const NavItems = (props) => {

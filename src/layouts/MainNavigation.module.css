@@ -1,3 +1,15 @@
+a {
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #043C53;
+}
+
+
+
+
 .logo_img{
     width: 3rem;
 
@@ -64,7 +76,7 @@
     display:none;
 }
 
-@media screen and (min-width: 767px){
+@media screen and (min-width: 768px){
     .hamburger_icon{
         display:none;
     }
@@ -83,11 +95,17 @@
         display:flex;
         width: 100%;
         justify-content: space-around;
+       
+    }
+    
+    .navbar_pc_item{
+        cursor: pointer;
+        text-decoration: none;
     }
 
     .navbar_pc_item:hover{
        color:#F3E622;
-       transition: all ease 0.5s;
+       transition: all ease 0.3s;
     }
 
 
