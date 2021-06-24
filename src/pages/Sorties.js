@@ -31,7 +31,7 @@ const Sorties = () => {
               <h6 className={classes.paragraph_title}>Pour les enfants</h6>
               <p>1/2 journée rando 28€</p>
               <p>1/2 journée descente 32€</p>
-              <p>journée 55€ (9h30-16h)</p>
+              <p>journée 55€ (9h 30-16h)</p>
             </div>
             <div className={classes.paragraph}>
               <h6 className={classes.paragraph_title}>Initation</h6>
