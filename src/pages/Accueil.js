@@ -1,9 +1,17 @@
 import classes from "./Accueil.module.css";
 import backgroundImage from "../img/background-img.jpg";
+import backgroundImageMedium from "../img/photos/allMountain/allMountain1.jpg";
+import { useMediaQuery } from "react-responsive";
 import {IoIosArrowDown} from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const Accueil = () => {
+  const isSmallDevice = useMediaQuery({
+    query: '(max-width: 768px)'
+  })
+  const isMediumDevice = useMediaQuery({
+    query : '(min-device-width: 769px)'
+  })
     return (
       <div className={classes.big_container}>
         <div className={classes.main_text}>
@@ -12,7 +20,7 @@ const Accueil = () => {
         </div>
         <img
           className={classes.background_img}
-          src={backgroundImage}
+          src={isSmallDevice ? backgroundImage : backgroundImageMedium }
           alt="Photo by Lachlan Cruickshank on Unsplash"
         />
         <div className={classes.footer_layer}>
