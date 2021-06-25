@@ -15,6 +15,12 @@ const Stages = () => {
                 freeride et enduro.
               </p>
             </div>
+            <div className={classes.paragraph}>
+              <h6 className={classes.paragraph_title}>Réduction par élève :</h6>
+              <p>• 3 sorties - 10%</p>
+              <p>• 4 sorties -12%</p>
+              <p>• 5 sorties -15 %</p>
+            </div>
           </div>
         </div>
       </div>
