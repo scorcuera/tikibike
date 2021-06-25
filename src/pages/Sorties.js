@@ -18,25 +18,25 @@ const Sorties = () => {
               <p>Vélo enfant 32€</p>
             </div>
             <div className={classes.paragraph}>
-              <h6 className={classes.paragraph_title}>Free Ride descente</h6>
-              <p>VTT tout suspendu 70€</p>
+              <h6 className={classes.paragraph_title}>Free Ride descente télésiège</h6>
+              <p>VTT tout suspendu 75€</p>
             </div>
             <div className={classes.paragraph}>
               <h6 className={classes.paragraph_title}>
                 Enduro sportif et technique
               </h6>
-              <p>50€</p>
+              <p>55€</p>
             </div>
             <div className={classes.paragraph}>
               <h6 className={classes.paragraph_title}>Pour les enfants</h6>
               <p>1/2 journée rando 28€</p>
               <p>1/2 journée descente 32€</p>
-              <p>journée 55€ (9h 30-16h)</p>
+              <p>journée 60€ (9h 30-16h)</p>
             </div>
             <div className={classes.paragraph}>
               <h6 className={classes.paragraph_title}>Initation</h6>
               <p>De la dépose roulettes au perfectionnement (dès 4 ans)</p>
-              <p>A partir de 25€</p>
+              <p>25€ la demi-heure / 40€ l'heure</p>
             </div>
           </div>
         </div>

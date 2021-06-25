@@ -23,3 +23,21 @@
     
 
 }
+
+.paragraph_container{
+    display: flex;
+    height: 100%;
+    padding: 0rem 1rem;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content:space-around;
+}
+
+.paragraph{
+    line-height: 1.5rem;
+}
+
+.paragraph_phrase{
+    font-style: italic;
+    color: #F3E622;
+}
