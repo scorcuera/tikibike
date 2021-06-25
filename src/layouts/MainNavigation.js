@@ -33,6 +33,7 @@ const MainNavigation = (props) => {
             <h3 className={classes.nav_title}></h3>
           </div>
           <div
+            onClick={handleHamburgerMenu}
             className={classes.hamburger}
             style={showHamburgerItems ? clickedHamburgerColor : null}
           >
