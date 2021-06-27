@@ -71,3 +71,17 @@
     color: #FFFFF7;
 }
 
+@media screen and (min-width: 768px){
+
+.footer_layer{
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.footer_text{
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    font-weight:800;
+}
+}

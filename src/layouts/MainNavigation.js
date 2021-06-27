@@ -42,7 +42,9 @@ const MainNavigation = (props) => {
               size={28}
               onClick={handleHamburgerMenu}
             />
-            <ul className={classes.navbar_pc}>
+            
+          </div>
+          <ul className={classes.navbar_pc}>
               <Link to="/sorties">
                 <li className={classes.navbar_pc_item}>Sorties</li>
               </Link>
@@ -59,7 +61,6 @@ const MainNavigation = (props) => {
                 <li className={classes.navbar_pc_item}>Accueil</li>
               </Link>
             </ul>
-          </div>
         </nav>
 
         {showHamburgerItems ? <NavItems onClick={handleHamburgerMenu} /> : null}

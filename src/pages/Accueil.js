@@ -24,11 +24,14 @@ const Accueil = () => {
           alt="Photo by Lachlan Cruickshank on Unsplash"
         />
         <div className={classes.footer_layer}>
-          <Link className={classes.button_footer} to="/sorties">
+          {isSmallDevice ? <Link className={classes.button_footer} to="/sorties">
             <a className={classes.button_link}>
               <IoIosArrowDown size={48} />
             </a>
-          </Link>
+          </Link> : isMediumDevice ? <h3 className={classes.footer_text}>Venir rider en toute sécurité les meilleurs spots de VTT du pays des Ecrins</h3> : null}
+          
+          
+          
         </div>
         <div className={classes.background_layer}></div>
       </div>
