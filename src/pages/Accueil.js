@@ -10,7 +10,7 @@ const Accueil = () => {
     query: '(max-width: 768px)'
   })
   const isMediumDevice = useMediaQuery({
-    query : '(min-device-width: 769px)'
+    query : '(min-device-width: 768px)'
   })
     return (
       <div className={classes.big_container}>
