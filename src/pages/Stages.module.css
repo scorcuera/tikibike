@@ -45,3 +45,38 @@
     font-style: italic;
     color: #F3E622;
 }
+
+
+/* classes for big devices */
+
+.big_container_big_device{
+    position: relative;
+    background-color: white; 
+    height: auto;
+    max-width: 100vw;
+    height: 90vh;
+}
+
+.footer{
+    height: 8vh;
+    width: 100%;
+    background-color: #0B111D;
+    position: absolute;
+    bottom: 0%;
+}
+
+.section_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.section_1{
+    height: 100%;
+    width: 40%;
+    background-color: #043C53;
+}
+
+.section_2{
+
+}

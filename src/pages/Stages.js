@@ -1,8 +1,22 @@
 import classes from "./Stages.module.css";
+import { useMediaQuery } from "react-responsive";
 
 const Stages = () => {
+  const isSmallDevice = useMediaQuery({
+    query: '(max-width: 767px)'
+  })
+  const isMediumDevice = useMediaQuery({
+    query : '(min-device-width: 768px)'
+  })
     return (
-      <div className={classes.big_container}>
+      <div>
+         {isSmallDevice ? <SmallDevice /> : <LargeDevice /> }
+      </div>
+    );
+}
+const SmallDevice = () => {
+  return(
+    <div className={classes.big_container}>
         <div className={classes.container_1}>
           <div className={classes.section_title}>
             <h3>Stages</h3>
@@ -24,7 +38,23 @@ const Stages = () => {
           </div>
         </div>
       </div>
-    );
+  )
 }
+const LargeDevice = () => {
+  return(
+    <div className={classes.big_container_big_device}>
+      <div className={classes.section_container}>
+        <div className={classes.section_1}>
 
+        </div>
+        <div className={classes.section_2}>
+
+        </div>
+      </div>
+      <div className={classes.footer}>
+
+      </div>
+    </div>
+  )
+}
 export default Stages
