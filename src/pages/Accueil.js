@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Accueil = () => {
   const isSmallDevice = useMediaQuery({
-    query: '(max-width: 768px)'
+    query: '(max-width: 767px)'
   })
   const isMediumDevice = useMediaQuery({
     query : '(min-device-width: 768px)'
@@ -16,7 +16,7 @@ const Accueil = () => {
       <div className={classes.big_container}>
         <div className={classes.main_text}>
           <h1 className={classes.brand_name}>Tikibike</h1>
-          <p>l'école de vélo du pays des Écrins</p>
+          <p className={classes.brand_subtitle}>l'école de vélo du pays des Écrins</p>
         </div>
         <img
           className={classes.background_img}

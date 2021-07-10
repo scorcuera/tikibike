@@ -83,5 +83,29 @@
     font-size: 1.2rem;
     padding-right: 1rem;
     font-weight:800;
+    
 }
+
+.background_img{
+  
+    object-position: bottom;
+    
+}
+}
+
+@media screen and (min-width: 992px){
+    .brand_subtitle{
+        font-size: 1.2rem;
+    }
+    
+    .brand_name{
+       
+        font-size: 4rem;
+      
+    }
+    .footer_text{
+        letter-spacing: 0.1rem;
+        
+    }
+    
 }

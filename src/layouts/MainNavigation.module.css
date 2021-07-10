@@ -115,9 +115,23 @@ a:visited{
     }
 
     .logo_img{
-        width: 4rem;
+        width: 3.5rem;
     
     }
    
 }
 
+@media screen and (min-width: 992px){
+    .logo_img{
+        width: 4.5rem;
+    
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .navbar_pc_item{
+     
+        font-size: 1.4rem;
+      
+    }
+}

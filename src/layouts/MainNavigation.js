@@ -54,6 +54,9 @@ const MainNavigation = (props) => {
               <Link to="/location">
                 <li className={classes.navbar_pc_item}>Location</li>
               </Link>
+              <Link to="/gallerie">
+                <li className={classes.navbar_pc_item}>Galerie</li>
+              </Link>
               <Link to="/contact">
                 <li className={classes.navbar_pc_item}>Contact</li>
               </Link>
