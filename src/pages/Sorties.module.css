@@ -117,6 +117,7 @@
     }
 
     .section_2_container{
+       
         width: 100%;
         height: 90%;
         display: flex;
@@ -128,6 +129,7 @@
     }
 
     .section_2_item{
+        position: relative;
         display: flex;
         justify-content: center;
         margin-bottom: 2rem;
@@ -185,6 +187,73 @@
 
     .section_2_btn_prix:hover{
         filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25))
+    }
+
+    .sorties_info{
+        z-index: 2;
+        min-width: 35vw;
+        max-width: 40vw;
+        position: absolute;
+        bottom: -140%;
+        border: 1px solid #0489A8;
+        background-color: #FFFFF7 ;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+        border-radius: 20px;
+        padding: 1rem;
+        
+    }
+    .freeride_info{
+        z-index: 2;
+        min-width: 35vw;
+        max-width: 40vw;
+        position: absolute;
+        bottom: -50%;
+        border: 1px solid #0489A8;
+        background-color: #FFFFF7 ;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+        border-radius: 20px;
+        padding: 1rem;
+        
+    }
+    .enduro_info{
+        z-index: 2;
+        min-width: 35vw;
+        max-width: 40vw;
+        position: absolute;
+        bottom: -50%;
+        border: 1px solid #0489A8;
+        background-color: #FFFFF7 ;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+        border-radius: 20px;
+        padding: 1rem;
+        
+    }
+    .enfants_info{
+        z-index: 2;
+        min-width: 35vw;
+        max-width: 40vw;
+        position: absolute;
+        bottom: -140%;
+        border: 1px solid #0489A8;
+        background-color: #FFFFF7 ;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+        border-radius: 20px;
+        padding: 1rem;
+        
+    }
+
+    .initiation_info{
+        z-index: 2;
+        min-width: 35vw;
+        max-width: 45vw;
+        position: absolute;
+        bottom: -110%;
+        border: 1px solid #0489A8;
+        background-color: #FFFFF7 ;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+        border-radius: 20px;
+        padding: 1rem;
+        
     }
 
 }

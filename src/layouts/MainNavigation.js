@@ -13,6 +13,7 @@ const MainNavigation = (props) => {
    
 
     const handleHamburgerMenu = () => setHamburgerItems(!showHamburgerItems) 
+    
     const redirectHome = () => setHamburgerItems(false);
     
  
