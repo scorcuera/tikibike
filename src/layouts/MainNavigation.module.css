@@ -1,13 +1,8 @@
-a {
+
+a:hover, a:visited, a:link, a:active{
     text-decoration: none;
     color: #043C53;
 }
-
-a:visited{
-    text-decoration: none;
-    color: #043C53;
-}
-
 
 
 
@@ -101,6 +96,10 @@ a:visited{
         justify-content: space-around;
    
        
+    }
+
+    .navbar_pc_link{
+        text-decoration: none;
     }
     
     .navbar_pc_item{

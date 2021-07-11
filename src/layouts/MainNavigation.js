@@ -45,7 +45,7 @@ const MainNavigation = (props) => {
             
           </div>
           <ul className={classes.navbar_pc}>
-              <Link to="/sorties">
+              <Link className={classes.navbar_pc_link} to="/sorties">
                 <li className={classes.navbar_pc_item}>Sorties</li>
               </Link>
               <Link to="/stages">
