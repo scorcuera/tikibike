@@ -68,7 +68,7 @@
 }
 
 .footer{
-    height: 8vh;
+    height: 5vh;
     width: 100%;
     background-color: #0B111D;
     position: absolute;
@@ -88,5 +88,105 @@
 }
 
 .section_2{
+    height: 100%;
+    width: 60% ;
+}
+
+@media screen and (min-width: 768px){
+    .section_1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section_title h3{
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .paragraph{
+        margin-bottom: 8rem;
+    }
+
+    .paragraph_title{
+        color: #FFFFF7;
+        font-weight: 400;
+        font-size: 1.3rem;
+ 
+    }
+
+    .section_2_container{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 7rem;
+        
+    }
+
+    .section_2_item{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        
+ 
+        
+       
+       
+    }
+
+    .section_2_item p{
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #0B111D;
+        margin-right: 2rem;
+       
+    }
+
+    .section_2_btn{
+        width: 2.5rem;
+        height: 2.5rem;
+        background: #0489A8;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+        border: none;
+        color:#FFFFF7 ;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all ease 0.5s;
+    }
+
+    .section_2_btn:hover{
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25))
+    }
+
+
+    .section_2_btn_link:visited, .section_2_btn_link:link, .section_2_btn_link:active{
+        text-decoration: none;
+        color: #FFFFF7;
+    }
+
+    .section_2_btn_prix{
+        margin-top:4rem;
+        margin: 0 auto;
+        background: #0489A8;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+        padding: 1rem 1rem;
+        font-style: normal;
+        font-weight: bold;
+        color: #FFFFF7;
+        border: none;
+        cursor: pointer;
+        transition: all ease 0.5s;
+        text-decoration: none;
+    }
+
+    .section_2_btn_prix:hover{
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25))
+    }
 
 }
+
+/*border: 5px solid #FFFFF7;*/

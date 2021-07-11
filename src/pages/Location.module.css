@@ -85,7 +85,7 @@
 }
 
 .footer{
-    height: 8vh;
+    height: 5vh;
     width: 100%;
     background-color: #0B111D;
     position: absolute;
@@ -116,12 +116,15 @@
         height: auto;
         display: flex;
         justify-content: center;
-        padding: 1.5rem
+        padding: 2rem
         0rem 0.5rem 0rem;
         font-size: 2rem;
         color: #F3E622;
-        
+    
+    }
 
+    .section_title h3{
+        font-size: 3rem;
     }
     .paragraph_container{
         display: flex;
@@ -142,5 +145,14 @@
         width: 100%;
         object-fit: cover;
         object-position: right;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .paragraph_title{
+        font-size: 1.2rem;
+    }
+    .paragraph_container{
+        font-size: 1.2rem;
     }
 }

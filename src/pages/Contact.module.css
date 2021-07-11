@@ -75,7 +75,7 @@
 }
 
 .footer{
-    height: 8vh;
+    height: 5vh;
     width: 100%;
     background-color: #0B111D;
     position: absolute;
@@ -111,6 +111,9 @@
     font-size: 2rem;
     color: #F3E622;
 
+    }
+    .section_title h3{
+        font-size: 3rem;
     }
 
     .container_map{
