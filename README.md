@@ -8,7 +8,7 @@ This is the website I made for a local bike rental business located in the frenc
 
 The design of the web, made with Figma, was entirely made by **@MAlexGG**. Main colors were chosen from the business brand. 
 
-<div style="display: flex; flex-direction: column; justify-content: center; align-items:center; padding-bottom: 2rem; padding-top: 2rem;">
+<div width="100vw" style="display: flex; flex-direction: column; justify-content: center; align-items:center; padding-bottom: 2rem; padding-top: 2rem;">
 <img src="./src/img/readme/large1.png" width="500" style="padding-right: 2rem;" />
 <img src="./src/img/readme/large2.png" width="500" style="padding-left: 2rem;" />
 </div>
