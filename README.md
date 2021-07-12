@@ -8,4 +8,26 @@ This is the website I made for a local bike rental business located in the frenc
 
 The design of the web, made with Figma, was entirely made by **@MAlexGG**. Main colors were chosen from the business brand. 
 
-(/src/img/readme/large1.png)
+<div style="display: flex; justify-content: center; align-items:center; padding-bottom: 2rem; padding-top: 2rem;">
+<img src="./src/img/readme/large1.png" style="width: 30rem; padding-right: 1rem;" />
+<img src="./src/img/readme/large2.png" style="width: 30rem; padding-left: 1rem;" />
+</div>
+<div style="display: flex; justify-content: center; align-items:center">
+<img src="./src/img/readme/small1.png" style="width: 15rem; padding-right: 1rem;" />
+<img src="./src/img/readme/small2.png" style="width: 15rem; padding-left: 1rem; padding-bottom: 2rem;" />
+</div>
+
+### Technologies
+
+* HTML
+* CSS
+* Javascript
+* React
+* Figma
+
+_As a banal attempt of disclaimer for any huge mistake, it is worht to say that is the first time I try React to builf anything. A great experience, tho !_
+
+
+### Collaborators
+
+**@MAlexGG** was in charge of the design. Props to her !
