@@ -25,7 +25,7 @@ The design of the web, made with Figma, was entirely made by **@MAlexGG**. Main 
 * React
 * Figma
 
-_As a banal attempt of disclaimer for any huge mistake, it is worht to say that is the first time I try React to builf anything. A great experience, tho !_
+_As a banal attempt of disclaimer for any huge mistake, it is worth to say that is the first time I try React to build anything. A great experience, tho !_
 
 
 ### Collaborators
