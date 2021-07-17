@@ -195,6 +195,7 @@
         max-width: 40vw;
         position: absolute;
         top: 3rem;
+        left: 0rem;
         border: 1px solid #0489A8;
         background-color: #FFFFF7 ;
         filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
@@ -208,6 +209,7 @@
         max-width: 40vw;
         position: absolute;
         top: 3rem;
+        left: 0rem;
         border: 1px solid #0489A8;
         background-color: #FFFFF7 ;
         filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
@@ -217,10 +219,11 @@
     }
     .enduro_info{
         z-index: 2;
-        min-width: 35vw;
-        max-width: 40vw;
+        min-width: 25vw;
+        max-width: 35vw;
         position: absolute;
         top: 3rem;
+        left: 0rem;
         border: 1px solid #0489A8;
         background-color: #FFFFF7 ;
         filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
@@ -234,6 +237,7 @@
         max-width: 40vw;
         position: absolute;
         top: 3rem;
+        left: 0rem;
         border: 1px solid #0489A8;
         background-color: #FFFFF7 ;
         filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
@@ -244,10 +248,11 @@
 
     .initiation_info{
         z-index: 2;
-        min-width: 35vw;
+        min-width: 40vw;
         max-width: 45vw;
         position: absolute;
         top: 3rem;
+        left: 0rem;
         border: 1px solid #0489A8;
         background-color: #FFFFF7 ;
         filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
@@ -257,7 +262,7 @@
     }
 
     .info_container p {
-        padding-bottom:1rem;
+        padding-bottom:1srem;
     }
 
 }
