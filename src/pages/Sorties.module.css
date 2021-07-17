@@ -256,5 +256,9 @@
         
     }
 
+    .info_container p {
+        padding-bottom:1rem;
+    }
+
 }
 

@@ -127,7 +127,7 @@ const LargeDevice = () => {
                   <BiPlus className={classes.section_2_btn_link} size={38} />
                 </a>
                 {AllMountainInfo ? (
-                <div className={classes.sorties_info}>
+                <div className={`${classes.sorties_info} ${classes.info_container}`}>
                   <p>VTT suspendu avant 35€</p>
                   <p>VTT suspendu 45€</p>
                   <p>Vélo enfant 32€</p>
@@ -141,7 +141,7 @@ const LargeDevice = () => {
                 <BiPlus className={classes.section_2_btn_link} size={38} />
               </a>
               {FreeRideInfo ? (
-                <div className={classes.freeride_info}>
+                <div className={`${classes.freeride_info} ${classes.info_container}`}>
                   <p>VTT tout suspendu 75€</p>
                 </div>
               ) : null}
@@ -153,7 +153,7 @@ const LargeDevice = () => {
                 <BiPlus className={classes.section_2_btn_link} size={38} />
               </a>
               {EnduroInfo ? (
-                <div className={classes.enduro_info}>
+                <div className={`${classes.enduro_info} ${classes.info_container}`}>
                   <p>55€</p>
                 </div>
               ) : null}
@@ -165,7 +165,7 @@ const LargeDevice = () => {
                 <BiPlus className={classes.section_2_btn_link} size={38} />
               </a>
               {EnfantsInfo ? (
-                <div className={classes.enfants_info}>
+                <div className={`${classes.enfants_info} ${classes.info_container}`}>
                   <p>1/2 journée rando 28€</p>
                   <p>1/2 journée descente 32€</p>
                   <p>journée 60€ (9h 30-16h)</p>
@@ -180,7 +180,7 @@ const LargeDevice = () => {
                 <BiPlus className={classes.section_2_btn_link} size={38} />
               </a>
               {InitiationInfo ? (
-                <div className={classes.initiation_info}>
+                <div className={`${classes.initiation_info} ${classes.info_container}`}>
                   <p>De la dépose roulettes au perfectionnement (dès 4 ans)</p>
                   <p>25€ la demi-heure / 40€ l'heure</p>
                   
