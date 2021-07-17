@@ -78,5 +78,28 @@
 }
 
 .section_2{
+    max-height: 100%;
+    width: 60%;
+    background-color: white;
+}
 
+.img_section{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+@media screen and (min-width: 768px){
+    
+    .section_title {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding: 2rem
+        0rem 0.5rem 0rem;
+        font-size: 2rem;
+        color: #F3E622;
+    
+    }
 }

@@ -1,5 +1,6 @@
 import classes from "./Stages.module.css";
 import { useMediaQuery } from "react-responsive";
+import {stockImages} from '../images';
 
 const Stages = () => {
   const isSmallDevice = useMediaQuery({
@@ -45,10 +46,12 @@ const LargeDevice = () => {
     <div className={classes.big_container_big_device}>
       <div className={classes.section_container}>
         <div className={classes.section_1}>
-
+          <div className={classes.section_title}>
+            <h3>Stages</h3>
+          </div>
         </div>
         <div className={classes.section_2}>
-
+          <img className={classes.img_section} src={stockImages[11].src} alt="" />
         </div>
       </div>
       <div className={classes.footer}>
