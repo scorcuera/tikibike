@@ -193,6 +193,7 @@
         z-index: 2;
         min-width: 35vw;
         max-width: 40vw;
+        max-height: 20vh;
         position: absolute;
         top: 3rem;
         left: 0rem;
@@ -207,6 +208,7 @@
         z-index: 2;
         min-width: 35vw;
         max-width: 40vw;
+        max-height: 10vh;
         position: absolute;
         top: 3rem;
         left: 0rem;
@@ -221,6 +223,7 @@
         z-index: 2;
         min-width: 25vw;
         max-width: 35vw;
+        max-height: 10vh;
         position: absolute;
         top: 3rem;
         left: 0rem;
@@ -235,6 +238,7 @@
         z-index: 2;
         min-width: 35vw;
         max-width: 40vw;
+        max-height: 25vh;
         position: absolute;
         top: 3rem;
         left: 0rem;
@@ -250,6 +254,7 @@
         z-index: 2;
         min-width: 40vw;
         max-width: 45vw;
+        max-height:25vh;
         position: absolute;
         top: 3rem;
         left: 0rem;
