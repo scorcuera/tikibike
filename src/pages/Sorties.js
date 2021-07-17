@@ -117,7 +117,7 @@ const LargeDevice = () => {
         </div>
         <div className={classes.section_2}>
           <div className={classes.section_2_container}>
-            <div style={{ position: "relative" }}>
+            
               <div className={classes.section_2_item}>
                 <p>All mountain rando descendantes</p>
                 <a
@@ -126,51 +126,44 @@ const LargeDevice = () => {
                 >
                   <BiPlus className={classes.section_2_btn_link} size={38} />
                 </a>
-              </div>
-
-              {AllMountainInfo ? (
+                {AllMountainInfo ? (
                 <div className={classes.sorties_info}>
                   <p>VTT suspendu avant 35€</p>
                   <p>VTT suspendu 45€</p>
                   <p>Vélo enfant 32€</p>
                 </div>
               ) : null}
-            </div>
-            <div style={{ position: "relative" }} >
+              </div>
+
               <div className={classes.section_2_item}>
               <p>Free Ride descente</p>
               <a  onClick={handleFreeRideInfo} className={classes.section_2_btn}>
                 <BiPlus className={classes.section_2_btn_link} size={38} />
               </a>
-              </div>
               {FreeRideInfo ? (
                 <div className={classes.freeride_info}>
                   <p>VTT tout suspendu 75€</p>
                 </div>
               ) : null}
+              </div>
               
-            </div>
-            <div style={{ position: "relative" }}>
               <div className={classes.section_2_item}>
               <p>Enduro sportif et technique</p>
               <a onClick={handleEnduroInfo} className={classes.section_2_btn}>
                 <BiPlus className={classes.section_2_btn_link} size={38} />
               </a>
-              </div>
               {EnduroInfo ? (
                 <div className={classes.enduro_info}>
                   <p>55€</p>
                 </div>
               ) : null}
-              
-            </div>
-            <div style={{ position: "relative" }} >
+              </div>
+     
               <div className={classes.section_2_item}>
               <p>Pour les enfants</p>
               <a onClick={handleEnfantsInfo} className={classes.section_2_btn}>
                 <BiPlus className={classes.section_2_btn_link} size={38} />
               </a>
-              </div>
               {EnfantsInfo ? (
                 <div className={classes.enfants_info}>
                   <p>1/2 journée rando 28€</p>
@@ -178,15 +171,14 @@ const LargeDevice = () => {
                   <p>journée 60€ (9h 30-16h)</p>
                 </div>
               ) : null}
+              </div>
               
-            </div>
-            <div style={{ position: "relative" }}>
+
               <div className={classes.section_2_item}>
               <p>Initiation</p>
               <a onClick={handleInitiationInfo} className={classes.section_2_btn}>
                 <BiPlus className={classes.section_2_btn_link} size={38} />
               </a>
-              </div>
               {InitiationInfo ? (
                 <div className={classes.initiation_info}>
                   <p>De la dépose roulettes au perfectionnement (dès 4 ans)</p>
@@ -194,8 +186,10 @@ const LargeDevice = () => {
                   
                 </div>
               ) : null}
+              </div>
               
-            </div>
+              
+         
             <button className={classes.section_2_btn_prix}>Nos prix</button>
           </div>
         </div>
