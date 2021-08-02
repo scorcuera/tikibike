@@ -6,9 +6,7 @@ const Contact = () => {
   const isSmallDevice = useMediaQuery({
     query: "(max-width: 767px)",
   });
-  const isMediumDevice = useMediaQuery({
-    query: "(min-device-width: 768px)",
-  });
+  
   return <div>{isSmallDevice ? <SmallDevice /> : <LargeDevice />}</div>;
 };
 

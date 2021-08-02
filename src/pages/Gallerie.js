@@ -13,7 +13,7 @@ const Gallerie = () => {
           <div className={classes.grid_container}>
             {stockImages.map((image) => (
               <div className={classes.grid_item}>
-                <img style={{ width: "100%" }} src={image.src} />
+                <img style={{ width: "100%" }} src={image.src} alt="gallery item" />
               </div>
             ))}
           </div>

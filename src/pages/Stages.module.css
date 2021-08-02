@@ -102,4 +102,36 @@
         color: #F3E622;
     
     }
+
+
+.paragraph_container{
+    display: flex;
+    height: 50%;
+    padding: 0rem 1rem;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content:space-around;
+}
+
+.paragraph{
+   
+    line-height: 1.5rem;
+    color:#FFFFF7 ;
+    font-size: 1.4rem;
+}
+
+.paragraph_title{
+    padding-bottom: 1rem;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #FFFFF7;
+}
+
+.paragraph_phrase{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-style:italic;
+    font-weight: 300;
+    color: #F3E622 ;
+}
 }

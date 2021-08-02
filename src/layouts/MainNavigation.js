@@ -30,9 +30,6 @@ const MainNavigation = (props) => {
               />
             </Link>
           </div>
-          <div>
-            <h3 className={classes.nav_title}></h3>
-          </div>
           <div
             onClick={handleHamburgerMenu}
             className={classes.hamburger}

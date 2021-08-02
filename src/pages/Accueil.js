@@ -21,7 +21,7 @@ const Accueil = () => {
         <img
           className={classes.background_img}
           src={isSmallDevice ? backgroundImage : backgroundImageMedium }
-          alt="Photo by Lachlan Cruickshank on Unsplash"
+          alt="By Lachlan Cruickshank on Unsplash"
         />
         <div className={classes.footer_layer}>
           {isSmallDevice ? <Link className={classes.button_footer} to="/sorties">
