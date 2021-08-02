@@ -1,0 +1,9 @@
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgPrix{
+    max-width: 70rem;
+    padding-top: 1rem;
+}
