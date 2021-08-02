@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Gallerie from './pages/Gallerie';
 import MainNavigation from './layouts/MainNavigation';
 import Accueil from './pages/Accueil';
+import Prices from './pages/Prices'
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/location" component={Location} title="Location" />
         <Route path="/contact" component={Contact} title="Contact" />
         <Route path="/gallerie" component={Gallerie} title="Gallerie" />
+        <Route path="/prices" component={Prices} title="Gallerie" />
       </Switch>
     </Router>
   );

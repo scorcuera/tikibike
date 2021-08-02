@@ -170,6 +170,10 @@
         color: #FFFFF7;
     }
 
+    .btnLink{
+        margin: 0 auto;
+    }
+
     .section_2_btn_prix{
         margin-top:4rem;
         margin: 0 auto;
@@ -269,6 +273,8 @@
     .info_container p {
         padding-bottom:1srem;
     }
+
+
 
 }
 

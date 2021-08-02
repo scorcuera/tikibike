@@ -1,8 +1,10 @@
+
 import classes from "./Stages.module.css";
 import { useMediaQuery } from "react-responsive";
 import {stockImages} from '../images';
 
 const Stages = () => {
+ 
   const isSmallDevice = useMediaQuery({
     query: '(max-width: 767px)'
   })

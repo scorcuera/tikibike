@@ -1,9 +1,12 @@
 import classes from "./Sorties.module.css";
+
 import { useMediaQuery } from "react-responsive";
 import { BiPlus } from "react-icons/bi";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Sorties = () => {
+  
   const isSmallDevice = useMediaQuery({
     query: "(max-width: 767px)",
   });
@@ -89,6 +92,8 @@ const SmallDevice = () => {
 };
 
 const LargeDevice = () => {
+ 
+
 
   const [AllMountainInfo, setAllMountainInfo] = useState(false);
   const [FreeRideInfo, setFreeRideInfo] = useState(false);
@@ -189,11 +194,14 @@ const LargeDevice = () => {
               </div>
               
               
-         
-            <button className={classes.section_2_btn_prix}>Nos prix</button>
+            <Link className={classes.btnLink} to="/prices">  
+               <button className={classes.section_2_btn_prix}>Nos prix</button>
+            </Link>
+            
           </div>
         </div>
       </div>
+      
       <div className={classes.footer}></div>
     </div>
   );
