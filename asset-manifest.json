@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tikibike/static/css/main.45782222.chunk.css",
-    "main.js": "/tikibike/static/js/main.1ceacf4b.chunk.js",
-    "main.js.map": "/tikibike/static/js/main.1ceacf4b.chunk.js.map",
+    "main.js": "/tikibike/static/js/main.fc218816.chunk.js",
+    "main.js.map": "/tikibike/static/js/main.fc218816.chunk.js.map",
     "runtime-main.js": "/tikibike/static/js/runtime-main.09d0affd.js",
     "runtime-main.js.map": "/tikibike/static/js/runtime-main.09d0affd.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/tikibike/static/css/2.4c97ca4f.chunk.css",
@@ -65,6 +65,6 @@
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.1111920a.chunk.js",
     "static/css/main.45782222.chunk.css",
-    "static/js/main.1ceacf4b.chunk.js"
+    "static/js/main.fc218816.chunk.js"
   ]
 }
