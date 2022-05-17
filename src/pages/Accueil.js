@@ -28,7 +28,7 @@ const Accueil = () => {
             <a className={classes.button_link}>
               <IoIosArrowDown size={48} />
             </a>
-          </Link> : isMediumDevice ? <h3 className={classes.footer_text}>Venir rider en toute sécurité les meilleurs spots de VTT du pays des Ecrins</h3> : null}
+          </Link> : isMediumDevice ? <h3 className={classes.footer_text}>Venez rider en toute sécurité les meilleurs spots de VTT du pays des Ecrins</h3> : null}
           
           
           

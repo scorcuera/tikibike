@@ -116,7 +116,7 @@ const LargeDevice = () => {
           </div>
           <div className={classes.paragraph}>
             <p className={classes.paragraph_title}>
-              Avec un moniteur a la demi journeé
+              Avec un moniteur à la demi journée
             </p>
           </div>
         </div>
