@@ -133,9 +133,9 @@ const LargeDevice = () => {
                 </a>
                 {AllMountainInfo ? (
                 <div className={`${classes.sorties_info} ${classes.info_container}`}>
-                  <p>VTT suspendu avant 35€</p>
-                  <p>VTT suspendu 45€</p>
-                  <p>Vélo enfant 32€</p>
+                  <p>VTT suspendu avant 38€</p>
+                  <p>VTT suspendu 50€</p>
+                  <p>Vélo enfant 35€</p>
                 </div>
               ) : null}
               </div>
@@ -147,7 +147,7 @@ const LargeDevice = () => {
               </a>
               {FreeRideInfo ? (
                 <div className={`${classes.freeride_info} ${classes.info_container}`}>
-                  <p>VTT tout suspendu 75€</p>
+                  <p>VTT tout suspendu 80€</p>
                 </div>
               ) : null}
               </div>
@@ -159,7 +159,7 @@ const LargeDevice = () => {
               </a>
               {EnduroInfo ? (
                 <div className={`${classes.enduro_info} ${classes.info_container}`}>
-                  <p>55€</p>
+                  <p>60€ (50€ avec vélo personnel)</p>
                 </div>
               ) : null}
               </div>
@@ -171,9 +171,9 @@ const LargeDevice = () => {
               </a>
               {EnfantsInfo ? (
                 <div className={`${classes.enfants_info} ${classes.info_container}`}>
-                  <p>1/2 journée rando 28€</p>
-                  <p>1/2 journée descente 32€</p>
-                  <p>journée 60€ (9h 30-16h)</p>
+                  <p>1/2 journée rando 30€</p>
+                  <p>1/2 journée descente 35€</p>
+                  <p>journée 62€ (9h30-16h)</p>
                 </div>
               ) : null}
               </div>
@@ -187,7 +187,7 @@ const LargeDevice = () => {
               {InitiationInfo ? (
                 <div className={`${classes.initiation_info} ${classes.info_container}`}>
                   <p>De la dépose roulettes au perfectionnement (dès 4 ans)</p>
-                  <p>25€ la demi-heure / 40€ l'heure</p>
+                  <p>28€ la demi-heure / 45€ l'heure</p>
                   
                 </div>
               ) : null}
