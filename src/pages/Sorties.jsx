@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { BiPlus } from "react-icons/bi";
-import ResponsiveLayout from '../components/ResponsiveLayout';
+import ResponsiveLayout from '../components/ResponsiveLayout.jsx';
 import classes from "./Sorties.module.css";
 
 const Sorties = () => {

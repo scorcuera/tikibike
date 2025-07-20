@@ -1,4 +1,4 @@
-import ResponsiveLayout from '../components/ResponsiveLayout';
+import ResponsiveLayout from '../components/ResponsiveLayout.jsx';
 import { featuredImages } from '../assets/images';
 import classes from "./Contact.module.css";
 
