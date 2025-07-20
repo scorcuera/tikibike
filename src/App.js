@@ -17,7 +17,7 @@ function App() {
   
 
   return (
-    <Router basename="/tikibike" >
+    <Router>
       <MainNavigation />
       <Switch>
         <Route path="/" exact component={Accueil} />
