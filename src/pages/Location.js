@@ -1,20 +1,18 @@
-import classes from "./Location.module.css";
 import { Link } from "react-router-dom";
-import { useMediaQuery } from "react-responsive";
-import {stockImages} from '../images';
-
-
-
+import ResponsiveLayout from '../components/ResponsiveLayout';
+import { featuredImages } from '../assets/images';
+import classes from "./Location.module.css";
 
 const Location = () => {
-  const isSmallDevice = useMediaQuery({
-    query: "(max-width: 767px)",
-  });
- 
-  return <div>{isSmallDevice ? <SmallDevice /> : <LargeDevice />}</div>;
+  return (
+    <ResponsiveLayout 
+      mobileComponent={LocationMobile}
+      desktopComponent={LocationDesktop}
+    />
+  );
 };
 
-const SmallDevice = () => {
+const LocationMobile = () => {
   return (
     <div className={classes.big_container}>
       <div className={classes.container_1}>
@@ -43,7 +41,7 @@ const SmallDevice = () => {
             </p>
           </div>
           <Link to="/gallerie" className={classes.button_location}>
-            <a className={classes.button_link}>Voir des photos</a>
+            Voir des photos
           </Link>
         </div>
       </div>
@@ -51,7 +49,7 @@ const SmallDevice = () => {
   );
 };
 
-const LargeDevice = () => {
+const LocationDesktop = () => {
   return (
     <div className={classes.big_container_big_device}>
       <div className={classes.section_container}>
@@ -81,12 +79,17 @@ const LargeDevice = () => {
               </p>
             </div>
             <Link to="/gallerie" className={classes.button_location}>
-              <a className={classes.button_link}>Voir des photos</a>
+              Voir des photos
             </Link>
           </div>
         </div>
         <div className={classes.section_2}>
-          <img className={classes.img_section} src={stockImages[1].src} alt="" />
+          <img 
+            className={classes.img_section} 
+            src={featuredImages.location} 
+            alt="Location VTT Tikibike"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className={classes.footer}></div>

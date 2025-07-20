@@ -1,41 +1,41 @@
-import classes from "./Accueil.module.css";
-import backgroundImage from "../img/background-img.jpg";
-import backgroundImageMedium from "../img/photos/allMountain/allMountain1.jpg";
-import { useMediaQuery } from "react-responsive";
-import {IoIosArrowDown} from "react-icons/io";
 import { Link } from "react-router-dom";
+import { IoIosArrowDown } from "react-icons/io";
+import useResponsive from "../hooks/useResponsive";
+import { featuredImages } from '../assets/images';
+import classes from "./Accueil.module.css";
 
 const Accueil = () => {
-  const isSmallDevice = useMediaQuery({
-    query: '(max-width: 767px)'
-  })
-  const isMediumDevice = useMediaQuery({
-    query : '(min-device-width: 768px)'
-  })
-    return (
-      <div className={classes.big_container}>
-        <div className={classes.main_text}>
-          <h1 className={classes.brand_name}>Tikibike</h1>
-          <p className={classes.brand_subtitle}>l'école de vélo du pays des Écrins</p>
-        </div>
-        <img
-          className={classes.background_img}
-          src={isSmallDevice ? backgroundImage : backgroundImageMedium }
-          alt="By Lachlan Cruickshank on Unsplash"
-        />
-        <div className={classes.footer_layer}>
-          {isSmallDevice ? <Link className={classes.button_footer} to="/sorties">
-            <a className={classes.button_link}>
-              <IoIosArrowDown size={48} />
-            </a>
-          </Link> : isMediumDevice ? <h3 className={classes.footer_text}>Venez rider en toute sécurité les meilleurs spots de VTT du pays des Ecrins</h3> : null}
-          
-          
-          
-        </div>
-        <div className={classes.background_layer}></div>
-      </div>
-    );
-}
+  const { isSmallDevice, isMediumDevice } = useResponsive();
 
-export default Accueil
+  return (
+    <div className={classes.big_container}>
+      <div className={classes.main_text}>
+        <h1 className={classes.brand_name}>Tikibike</h1>
+        <p className={classes.brand_subtitle}>l'école de vélo du pays des Écrins</p>
+      </div>
+      
+      <img
+        className={classes.background_img}
+        src={isSmallDevice ? featuredImages.background : featuredImages.backgroundMedium}
+        alt="Tikibike - École de vélo du pays des Écrins"
+        loading="eager"
+      />
+      
+      <div className={classes.footer_layer}>
+        {isSmallDevice ? (
+          <Link className={classes.button_footer} to="/sorties">
+            <IoIosArrowDown size={48} />
+          </Link>
+        ) : isMediumDevice ? (
+          <h3 className={classes.footer_text}>
+            Venez rider en toute sécurité les meilleurs spots de VTT du pays des Ecrins
+          </h3>
+        ) : null}
+      </div>
+      
+      <div className={classes.background_layer}></div>
+    </div>
+  );
+};
+
+export default Accueil;

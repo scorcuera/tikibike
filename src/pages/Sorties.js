@@ -1,23 +1,19 @@
-import classes from "./Sorties.module.css";
-
-import { useMediaQuery } from "react-responsive";
-import { BiPlus } from "react-icons/bi";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { BiPlus } from "react-icons/bi";
+import ResponsiveLayout from '../components/ResponsiveLayout';
+import classes from "./Sorties.module.css";
 
 const Sorties = () => {
-  
-  const isSmallDevice = useMediaQuery({
-    query: "(max-width: 767px)",
-  });
-  const isMediumDevice = useMediaQuery({
-    query: "(min-device-width: 768px)",
-  });
-
-  return <div>{isSmallDevice ? <SmallDevice /> : <LargeDevice />}</div>;
+  return (
+    <ResponsiveLayout 
+      mobileComponent={SortiesMobile}
+      desktopComponent={SortiesDesktop}
+    />
+  );
 };
 
-const SmallDevice = () => {
+const SortiesMobile = () => {
   return (
     <div className={classes.big_container}>
       <div className={classes.container_1}>
@@ -91,21 +87,45 @@ const SmallDevice = () => {
   );
 };
 
-const LargeDevice = () => {
- 
+const SortiesDesktop = () => {
+  const [activeSection, setActiveSection] = useState(null);
 
+  const toggleSection = (section) => {
+    setActiveSection(activeSection === section ? null : section);
+  };
 
-  const [AllMountainInfo, setAllMountainInfo] = useState(false);
-  const [FreeRideInfo, setFreeRideInfo] = useState(false);
-  const [EnduroInfo, setEnduroInfo] = useState(false);
-  const [EnfantsInfo, setEnfantsInfo] = useState(false);
-  const [InitiationInfo, setInitiationInfo] = useState(false);
-
-  const handleAllMountainInfo = () => setAllMountainInfo(!AllMountainInfo);
-  const handleFreeRideInfo = () => setFreeRideInfo(!FreeRideInfo);
-  const handleEnduroInfo = () => setEnduroInfo(!EnduroInfo);
-  const handleEnfantsInfo = () => setEnfantsInfo(!EnfantsInfo);
-  const handleInitiationInfo = () => setInitiationInfo(!InitiationInfo);
+  const sections = [
+    {
+      id: 'allMountain',
+      title: 'All mountain rando descendantes',
+      content: ['VTT suspendu avant 38€', 'VTT suspendu 50€', 'Vélo enfant 35€'],
+      className: 'sorties_info'
+    },
+    {
+      id: 'freeRide',
+      title: 'Free Ride descente',
+      content: ['VTT tout suspendu 80€'],
+      className: 'freeride_info'
+    },
+    {
+      id: 'enduro',
+      title: 'Enduro sportif et technique',
+      content: ['60€ (50€ avec vélo personnel)'],
+      className: 'enduro_info'
+    },
+    {
+      id: 'enfants',
+      title: 'Pour les enfants',
+      content: ['1/2 journée rando 30€', '1/2 journée descente 35€', 'journée 62€ (9h30-16h)'],
+      className: 'enfants_info'
+    },
+    {
+      id: 'initiation',
+      title: 'Initiation',
+      content: ['De la dépose roulettes au perfectionnement (dès 4 ans)', '28€ la demi-heure / 45€ l\'heure'],
+      className: 'initiation_info'
+    }
+  ];
 
   return (
     <div className={classes.big_container_big_device}>
@@ -122,82 +142,28 @@ const LargeDevice = () => {
         </div>
         <div className={classes.section_2}>
           <div className={classes.section_2_container}>
-            
-              <div className={classes.section_2_item}>
-                <p>All mountain rando descendantes</p>
-                <a
+            {sections.map((section) => (
+              <div key={section.id} className={classes.section_2_item}>
+                <p>{section.title}</p>
+                <button
                   className={classes.section_2_btn}
-                  onClick={handleAllMountainInfo}
+                  onClick={() => toggleSection(section.id)}
                 >
                   <BiPlus className={classes.section_2_btn_link} size={38} />
-                </a>
-                {AllMountainInfo ? (
-                <div className={`${classes.sorties_info} ${classes.info_container}`}>
-                  <p>VTT suspendu avant 38€</p>
-                  <p>VTT suspendu 50€</p>
-                  <p>Vélo enfant 35€</p>
-                </div>
-              ) : null}
+                </button>
+                {activeSection === section.id && (
+                  <div className={`${classes[section.className]} ${classes.info_container}`}>
+                    {section.content.map((item, index) => (
+                      <p key={index}>{item}</p>
+                    ))}
+                  </div>
+                )}
               </div>
-
-              <div className={classes.section_2_item}>
-              <p>Free Ride descente</p>
-              <a  onClick={handleFreeRideInfo} className={classes.section_2_btn}>
-                <BiPlus className={classes.section_2_btn_link} size={38} />
-              </a>
-              {FreeRideInfo ? (
-                <div className={`${classes.freeride_info} ${classes.info_container}`}>
-                  <p>VTT tout suspendu 80€</p>
-                </div>
-              ) : null}
-              </div>
-              
-              <div className={classes.section_2_item}>
-              <p>Enduro sportif et technique</p>
-              <a onClick={handleEnduroInfo} className={classes.section_2_btn}>
-                <BiPlus className={classes.section_2_btn_link} size={38} />
-              </a>
-              {EnduroInfo ? (
-                <div className={`${classes.enduro_info} ${classes.info_container}`}>
-                  <p>60€ (50€ avec vélo personnel)</p>
-                </div>
-              ) : null}
-              </div>
-     
-              <div className={classes.section_2_item}>
-              <p>Pour les enfants</p>
-              <a onClick={handleEnfantsInfo} className={classes.section_2_btn}>
-                <BiPlus className={classes.section_2_btn_link} size={38} />
-              </a>
-              {EnfantsInfo ? (
-                <div className={`${classes.enfants_info} ${classes.info_container}`}>
-                  <p>1/2 journée rando 30€</p>
-                  <p>1/2 journée descente 35€</p>
-                  <p>journée 62€ (9h30-16h)</p>
-                </div>
-              ) : null}
-              </div>
-              
-
-              <div className={classes.section_2_item}>
-              <p>Initiation</p>
-              <a onClick={handleInitiationInfo} className={classes.section_2_btn}>
-                <BiPlus className={classes.section_2_btn_link} size={38} />
-              </a>
-              {InitiationInfo ? (
-                <div className={`${classes.initiation_info} ${classes.info_container}`}>
-                  <p>De la dépose roulettes au perfectionnement (dès 4 ans)</p>
-                  <p>28€ la demi-heure / 45€ l'heure</p>
-                  
-                </div>
-              ) : null}
-              </div>
-              
-              
-            <Link className={classes.btnLink} to="/prices">  
-               <button className={classes.section_2_btn_prix}>Nos prix</button>
-            </Link>
+            ))}
             
+            <Link className={classes.btnLink} to="/prices">  
+              <button className={classes.section_2_btn_prix}>Nos prix</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -206,4 +172,5 @@ const LargeDevice = () => {
     </div>
   );
 };
+
 export default Sorties;

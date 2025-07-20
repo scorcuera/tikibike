@@ -1,33 +1,31 @@
-import  { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-// import {AnimatePresence, motion} from "framer-motion";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+
+// Layouts
+import MainNavigation from './layouts/MainNavigation';
+
+// Pages
+import Accueil from './pages/Accueil';
 import Sorties from './pages/Sorties';
 import Stages from './pages/Stages';
 import Location from './pages/Location';
 import Contact from './pages/Contact';
 import Gallerie from './pages/Gallerie';
-import MainNavigation from './layouts/MainNavigation';
-import Accueil from './pages/Accueil';
-import Prices from './pages/Prices'
-
-
+import Prices from './pages/Prices';
 
 function App() {
- 
-  
-
   return (
     <Router>
       <MainNavigation />
-      <Switch>
-        <Route path="/" exact component={Accueil} />
-        <Route path="/sorties" component={Sorties} title="Nos sorties" />
-        <Route path="/stages" component={Stages} title="Stages" />
-        <Route path="/location" component={Location} title="Location" />
-        <Route path="/contact" component={Contact} title="Contact" />
-        <Route path="/gallerie" component={Gallerie} title="Gallerie" />
-        <Route path="/prices" component={Prices} title="Gallerie" />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Accueil />} />
+        <Route path="/sorties" element={<Sorties />} />
+        <Route path="/stages" element={<Stages />} />
+        <Route path="/location" element={<Location />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/gallerie" element={<Gallerie />} />
+        <Route path="/prices" element={<Prices />} />
+      </Routes>
     </Router>
   );
 }

@@ -1,97 +1,89 @@
-import classes from "./MainNavigation.module.css";
 import { useState } from "react";
-import logo from "../img/logo.jpg";
-import {GiHamburgerMenu} from "react-icons/gi";
 import { Link } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { featuredImages } from '../assets/images';
+import classes from "./MainNavigation.module.css";
 
-const MainNavigation = (props) => {
-    
-    const clickedHamburgerColor = {color: "#F3E622", backgroundColor: "#043C53"}
+const MainNavigation = () => {
+  const [showHamburgerItems, setShowHamburgerItems] = useState(false);
 
-  
-    const [showHamburgerItems, setHamburgerItems] = useState(false)
-   
+  const handleHamburgerMenu = () => {
+    setShowHamburgerItems(!showHamburgerItems);
+  };
 
-    const handleHamburgerMenu = () => setHamburgerItems(!showHamburgerItems) 
-    
-    const redirectHome = () => setHamburgerItems(false);
-    
- 
+  const closeMenu = () => {
+    setShowHamburgerItems(false);
+  };
 
-    return (
-      <div style={{ position: "sticky", top: "0%", zIndex: "1" }}>
-        <nav className={classes.nav}>
-          <div>
-            <Link to="/" onClick={redirectHome}>
-              <img
-                className={classes.logo_img}
-                src={logo}
-                alt="logo tikibike"
-              />
-            </Link>
-          </div>
-          <div
-            onClick={handleHamburgerMenu}
-            className={classes.hamburger}
-            style={showHamburgerItems ? clickedHamburgerColor : null}
-          >
-            <GiHamburgerMenu
-              className={classes.hamburger_icon}
-              size={28}
-              onClick={handleHamburgerMenu}
+  const navigationItems = [
+    { path: "/sorties", label: "Sorties" },
+    { path: "/stages", label: "Stages" },
+    { path: "/location", label: "Location" },
+    { path: "/gallerie", label: "Galerie" },
+    { path: "/contact", label: "Contact" },
+    { path: "/", label: "Accueil" },
+  ];
+
+  return (
+    <div style={{ position: "sticky", top: "0%", zIndex: "1" }}>
+      <nav className={classes.nav}>
+        <div>
+          <Link to="/" onClick={closeMenu}>
+            <img
+              className={classes.logo_img}
+              src={featuredImages.logo}
+              alt="logo tikibike"
             />
-            
-          </div>
-          <ul className={classes.navbar_pc}>
-              <Link className={classes.navbar_pc_link} to="/sorties">
-                <li className={classes.navbar_pc_item}>Sorties</li>
-              </Link>
-              <Link to="/stages">
-                <li className={classes.navbar_pc_item}>Stages</li>
-              </Link>
-              <Link to="/location">
-                <li className={classes.navbar_pc_item}>Location</li>
-              </Link>
-              <Link to="/gallerie">
-                <li className={classes.navbar_pc_item}>Galerie</li>
-              </Link>
-              <Link to="/contact">
-                <li className={classes.navbar_pc_item}>Contact</li>
-              </Link>
-              <Link to="/">
-                <li className={classes.navbar_pc_item}>Accueil</li>
-              </Link>
-            </ul>
-        </nav>
-
-        {showHamburgerItems ? <NavItems onClick={handleHamburgerMenu} /> : null}
-      </div>
-    );
-}
-
-const NavItems = (props) => {
-    return(
-        <div className={classes.navBar}>
-            <ul className={classes.nav_items} >
-                <Link to="/sorties" onClick={props.onClick}>
-                    <li className={classes.nav_item}>Sorties</li>
-                </Link>
-                <Link to="/stages" onClick={props.onClick}>
-                     <li className={classes.nav_item}>Stages</li>
-                </Link>
-                <Link to="/location" onClick={props.onClick}>
-                     <li className={classes.nav_item}>Location</li>
-                </Link>
-                <Link to="/contact" onClick={props.onClick}>
-                    <li className={classes.nav_item}>Contact</li>
-                </Link>
-                <Link to="/gallerie" onClick={props.onClick}>
-                    <li className={classes.nav_item}>Galerie de photos</li>
-                </Link>
-                
-            </ul>
+          </Link>
         </div>
-    )
-}
 
-export default MainNavigation
+        <div
+          onClick={handleHamburgerMenu}
+          className={classes.hamburger}
+          style={
+            showHamburgerItems
+              ? { color: "#F3E622", backgroundColor: "#043C53" }
+              : null
+          }
+        >
+          <GiHamburgerMenu
+            className={classes.hamburger_icon}
+            size={28}
+          />
+        </div>
+
+        <ul className={classes.navbar_pc}>
+          {navigationItems.map(({ path, label }) => (
+            <li key={path}>
+              <Link className={classes.navbar_pc_link} to={path}>
+                <span className={classes.navbar_pc_item}>{label}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      {showHamburgerItems && <MobileMenu items={navigationItems} onClose={closeMenu} />}
+    </div>
+  );
+};
+
+const MobileMenu = ({ items, onClose }) => {
+  return (
+    <div className={classes.navBar}>
+      <ul className={classes.nav_items}>
+        {items.map(({ path, label }) => (
+          <li key={path}>
+            <Link to={path} onClick={onClose}>
+              <span className={classes.nav_item}>
+                {label === "Galerie" ? "Galerie de photos" : label}
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default MainNavigation;
