@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import useResponsive from "../hooks/useResponsive";
+import LazyImage from '../components/LazyImage.jsx';
 import { featuredImages } from '../assets/images';
 import classes from "./Accueil.module.css";
 
@@ -14,12 +15,15 @@ const Accueil = () => {
         <p className={classes.brand_subtitle}>l'école de vélo du pays des Écrins</p>
       </div>
       
-      <img
-        className={classes.background_img}
-        src={isSmallDevice ? featuredImages.background : featuredImages.backgroundMedium}
-        alt="Tikibike - École de vélo du pays des Écrins"
-        loading="eager"
-      />
+      <div className={classes.background_img_container}>
+        <LazyImage
+          src={isSmallDevice ? featuredImages.background : featuredImages.backgroundMedium}
+          alt="Tikibike - École de vélo du pays des Écrins"
+          priority={true}
+          className={classes.background_img}
+          aspectRatio="auto"
+        />
+      </div>
       
       <div className={classes.footer_layer}>
         {isSmallDevice ? (

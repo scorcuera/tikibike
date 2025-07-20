@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ResponsiveLayout from '../components/ResponsiveLayout.jsx';
+import LazyImage from '../components/LazyImage.jsx';
 import { featuredImages } from '../assets/images';
 import classes from "./Location.module.css";
 
@@ -84,11 +85,12 @@ const LocationDesktop = () => {
           </div>
         </div>
         <div className={classes.section_2}>
-          <img 
-            className={classes.img_section} 
-            src={featuredImages.location} 
+          <LazyImage
+            src={featuredImages.location}
             alt="Location VTT Tikibike"
-            loading="lazy"
+            priority={true}
+            className={classes.img_section}
+            aspectRatio="auto"
           />
         </div>
       </div>

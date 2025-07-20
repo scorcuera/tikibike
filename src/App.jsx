@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { featuredImages } from './assets/images';
+import useImagePrefetch from './hooks/useImagePrefetch.js';
 import './App.css';
 
 // Layouts
@@ -14,6 +16,19 @@ import Gallerie from './pages/Gallerie.jsx';
 import Prices from './pages/Prices.jsx';
 
 function App() {
+  // Prefetch critical images across the app
+  useImagePrefetch([
+    featuredImages.background,
+    featuredImages.backgroundMedium,
+    featuredImages.logo,
+    featuredImages.stages,
+    featuredImages.location
+  ], {
+    priority: 3,
+    delay: 500, // Wait longer as user is still on landing page
+    connection: 'auto'
+  });
+
   return (
     <Router>
       <MainNavigation />

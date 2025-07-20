@@ -1,5 +1,6 @@
 
 import ResponsiveLayout from '../components/ResponsiveLayout.jsx';
+import LazyImage from '../components/LazyImage.jsx';
 import { featuredImages } from '../assets/images';
 import classes from "./Stages.module.css";
 
@@ -64,11 +65,12 @@ const StagesDesktop = () => {
           </div>
         </div>
         <div className={classes.section_2}>
-          <img 
-            className={classes.img_section} 
-            src={featuredImages.stages} 
+          <LazyImage
+            src={featuredImages.stages}
             alt="Stages VTT Tikibike"
-            loading="lazy"
+            priority={true}
+            className={classes.img_section}
+            aspectRatio="auto"
           />
         </div>
       </div>
