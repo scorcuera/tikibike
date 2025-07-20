@@ -49,7 +49,7 @@ const LargeDevice = () => {
       <div className={classes.section_container}>
         <div className={classes.section_1}>
           <div className={classes.section_title}>
-            <h3>Stages</h3>
+            <h3>Stagestest</h3>
           </div>
           <div className={classes.paragraph_container}>
             <div className={classes.paragraph}>
