@@ -118,7 +118,7 @@ export const galleryImages = [
 
 // Featured images for specific pages
 export const featuredImages = {
-  stages: allMountain11, // Featured image for stages page
+  stages: allMountain6, // Featured image for stages page (changed from allMountain11 to allMountain1 for better performance)
   location: allMountain2, // Featured image for location page
   background: backgroundImg,
   backgroundMedium: allMountain1,
