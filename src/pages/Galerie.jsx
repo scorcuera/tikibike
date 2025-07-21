@@ -1,10 +1,10 @@
-import { galleryImages } from '../assets/images';
+import { galleryImages } from '../assets/images/index.js';
 import VirtualizedGallery from '../components/VirtualizedGallery.jsx';
 import useImagePrefetch from '../hooks/useImagePrefetch.js';
-import classes from "./Gallerie.module.css";
+import classes from "./Galerie.module.css";
 import PageContainer from '../components/PageContainer.jsx';
 
-const Gallerie = () => {
+const Galerie = () => {
   // Prefetch gallery images for better performance
   useImagePrefetch([
     galleryImages[0]?.src,
@@ -29,4 +29,4 @@ const Gallerie = () => {
   );
 };
 
-export default Gallerie;
+export default Galerie;

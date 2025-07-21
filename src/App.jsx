@@ -12,7 +12,7 @@ import Sorties from './pages/Sorties.jsx';
 import Stages from './pages/Stages.jsx';
 import Location from './pages/Location.jsx';
 import Contact from './pages/Contact.jsx';
-import Gallerie from './pages/Gallerie.jsx';
+import Galerie from './pages/Galerie.jsx';
 import Prices from './pages/Prices.jsx';
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
         <Route path="/stages" element={<Stages />} />
         <Route path="/location" element={<Location />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/gallerie" element={<Gallerie />} />
+        <Route path="/galerie" element={<Galerie />} />
         <Route path="/prices" element={<Prices />} />
       </Routes>
     </Router>

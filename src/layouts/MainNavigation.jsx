@@ -19,7 +19,7 @@ const MainNavigation = () => {
     { path: "/sorties", label: "Sorties" },
     { path: "/stages", label: "Stages" },
     { path: "/location", label: "Location" },
-    { path: "/gallerie", label: "Galerie" },
+    { path: "/galerie", label: "Galerie" },
     { path: "/contact", label: "Contact" },
     { path: "/", label: "Accueil" },
   ];

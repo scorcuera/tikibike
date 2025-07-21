@@ -41,7 +41,7 @@ const LocationMobile = () => {
               gants et Kit de réparation.
             </p>
           </div>
-          <Link to="/gallerie" className={classes.button_location}>
+          <Link to="/galerie" className={classes.button_location}>
             Voir des photos
           </Link>
         </div>
@@ -79,7 +79,7 @@ const LocationDesktop = () => {
                 casque, gants et Kit de réparation.
               </p>
             </div>
-            <Link to="/gallerie" className={classes.button_location}>
+            <Link to="/galerie" className={classes.button_location}>
               Voir des photos
             </Link>
           </div>
