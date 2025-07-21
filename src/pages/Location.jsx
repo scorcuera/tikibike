@@ -21,35 +21,84 @@ const LocationMobile = () => {
   }, []);
 
   return (
-    <div className={classes.big_container}>
-      <div className={classes.container_1}>
-        <div className={classes.section_title}>
-          <h3>Location</h3>
-        </div>
-        <div className={classes.paragraph_container}>
-          <div className={classes.paragraph}>
-            <p className={classes.paragraph_phrase}>
+    <div className={classes.page_container}>
+      <div className={classes.page_title}>
+        <h3>Location VTT</h3>
+      </div>
+
+      <div className={classes.content_wrapper}>
+        {/* --- Main Content Section --- */}
+        <div className={classes.main_section}>
+          <div className={classes.description_card}>
+            <p className={classes.description_text}>
               Nous avons régulièrement des vélos d'occasion, renseignez vous.
             </p>
           </div>
-          <div className={classes.paragraph}>
-            <h6 className={classes.paragraph_title}>
-              Location à l'heure à la journée et à la semaine :
-            </h6>
-            <p>Vélo de route</p>
-            <p>VTT tout suspendu</p>
-            <p>VTT suspendu avant</p>
-            <p>VTT eléctrique</p>
-            <p>VTT enfants</p>
-            <p>VTT tandem</p>
-            <p style={{ paddingTop: "1rem" }}>
-              Equipements: protection, siége bébé… Les prix comprennent casque,
-              gants et Kit de réparation.
-            </p>
+
+          {/* --- Bike Types Section --- */}
+          <div className={classes.bikes_section}>
+            <h4 className={classes.section_title}>Location à l'heure, à la journée et à la semaine</h4>
+            <div className={classes.bikes_grid}>
+              <div className={classes.bike_item}>
+                <div className={classes.bike_icon}>🚴</div>
+                <h5>Vélo de route</h5>
+              </div>
+              <div className={classes.bike_item}>
+                <div className={classes.bike_icon}>🏔️</div>
+                <h5>VTT tout suspendu</h5>
+              </div>
+              <div className={classes.bike_item}>
+                <div className={classes.bike_icon}>🌲</div>
+                <h5>VTT suspendu avant</h5>
+              </div>
+              <div className={classes.bike_item}>
+                <div className={classes.bike_icon}>⚡</div>
+                <h5>VTT électrique</h5>
+              </div>
+              <div className={classes.bike_item}>
+                <div className={classes.bike_icon}>👶</div>
+                <h5>VTT enfants</h5>
+              </div>
+              <div className={classes.bike_item}>
+                <div className={classes.bike_icon}>🚴‍♀️</div>
+                <h5>VTT tandem</h5>
+              </div>
+            </div>
           </div>
-          <Link to="/galerie" className={classes.button_location}>
-            Voir des photos
-          </Link>
+
+          {/* --- Equipment Section --- */}
+          <div className={classes.equipment_section}>
+            <h4 className={classes.section_title}>Équipements inclus</h4>
+            <div className={classes.equipment_list}>
+              <div className={classes.equipment_item}>
+                <span className={classes.equipment_icon}>🛡️</span>
+                <span>Protection</span>
+              </div>
+              <div className={classes.equipment_item}>
+                <span className={classes.equipment_icon}>👶</span>
+                <span>Siège bébé</span>
+              </div>
+              <div className={classes.equipment_item}>
+                <span className={classes.equipment_icon}>🪖</span>
+                <span>Casque</span>
+              </div>
+              <div className={classes.equipment_item}>
+                <span className={classes.equipment_icon}>🧤</span>
+                <span>Gants</span>
+              </div>
+              <div className={classes.equipment_item}>
+                <span className={classes.equipment_icon}>🔧</span>
+                <span>Kit de réparation</span>
+              </div>
+            </div>
+          </div>
+
+          {/* --- CTA Button --- */}
+          <div className={classes.cta_section}>
+            <Link to="/galerie" className={classes.cta_button}>
+              Voir des photos
+            </Link>
+          </div>
         </div>
       </div>
     </div>
@@ -57,50 +106,103 @@ const LocationMobile = () => {
 };
 
 const LocationDesktop = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className={classes.big_container_big_device}>
-      <div className={classes.section_container}>
-        <div className={classes.section_1}>
-          <div className={classes.section_title}>
-            <h3>Location</h3>
-          </div>
-          <div className={classes.paragraph_container}>
-            <div className={classes.paragraph}>
-              <p className={classes.paragraph_phrase}>
+    <div className={classes.page_container_desktop}>
+      <div className={classes.page_title}>
+        <h3>Location VTT</h3>
+      </div>
+
+      <div className={classes.content_wrapper_desktop}>
+        <div className={classes.left_panel}>
+          <div className={classes.content_section}>
+            <div className={classes.description_card}>
+              <p className={classes.description_text}>
                 Nous avons régulièrement des vélos d'occasion, renseignez vous.
               </p>
             </div>
-            <div className={classes.paragraph}>
-              <h6 className={classes.paragraph_title}>
-                Location à l'heure à la journée et à la semaine :
-              </h6>
-              <p>Vélo de route</p>
-              <p>VTT tout suspendu</p>
-              <p>VTT suspendu avant</p>
-              <p>VTT eléctrique</p>
-              <p>VTT enfants</p>
-              <p>VTT tandem</p>
-              <p style={{ paddingTop: "1rem" }}>
-                Equipements: protection, siége bébé… Les prix comprennent
-                casque, gants et Kit de réparation.
-              </p>
+
+            {/* --- Bike Types Section --- */}
+            <div className={classes.bikes_section}>
+              <h4 className={classes.section_title}>Location à l'heure, à la journée et à la semaine</h4>
+              <div className={classes.bikes_grid}>
+                <div className={classes.bike_item}>
+                  <div className={classes.bike_icon}>🚴</div>
+                  <h5>Vélo de route</h5>
+                </div>
+                <div className={classes.bike_item}>
+                  <div className={classes.bike_icon}>🏔️</div>
+                  <h5>VTT tout suspendu</h5>
+                </div>
+                <div className={classes.bike_item}>
+                  <div className={classes.bike_icon}>🌲</div>
+                  <h5>VTT suspendu avant</h5>
+                </div>
+                <div className={classes.bike_item}>
+                  <div className={classes.bike_icon}>⚡</div>
+                  <h5>VTT électrique</h5>
+                </div>
+                <div className={classes.bike_item}>
+                  <div className={classes.bike_icon}>👶</div>
+                  <h5>VTT enfants</h5>
+                </div>
+                <div className={classes.bike_item}>
+                  <div className={classes.bike_icon}>🚴‍♀️</div>
+                  <h5>VTT tandem</h5>
+                </div>
+              </div>
             </div>
-            <Link to="/galerie" className={classes.button_location}>
-              Voir des photos
-            </Link>
+
+            {/* --- Equipment Section --- */}
+            <div className={classes.equipment_section}>
+              <h4 className={classes.section_title}>Équipements inclus</h4>
+              <div className={classes.equipment_list}>
+                <div className={classes.equipment_item}>
+                  <span className={classes.equipment_icon}>🛡️</span>
+                  <span>Protection</span>
+                </div>
+                <div className={classes.equipment_item}>
+                  <span className={classes.equipment_icon}>👶</span>
+                  <span>Siège bébé</span>
+                </div>
+                <div className={classes.equipment_item}>
+                  <span className={classes.equipment_icon}>🪖</span>
+                  <span>Casque</span>
+                </div>
+                <div className={classes.equipment_item}>
+                  <span className={classes.equipment_icon}>🧤</span>
+                  <span>Gants</span>
+                </div>
+                <div className={classes.equipment_item}>
+                  <span className={classes.equipment_icon}>🔧</span>
+                  <span>Kit de réparation</span>
+                </div>
+              </div>
+            </div>
+
+            {/* --- CTA Button --- */}
+            <div className={classes.cta_section}>
+              <Link to="/galerie" className={classes.cta_button}>
+                Voir des photos
+              </Link>
+            </div>
           </div>
         </div>
-        <div className={classes.section_2}>
+
+        <div className={classes.right_panel}>
           <LazyImage
-            src={featuredImages.location} 
+            src={featuredImages.location}
             alt="Location VTT Tikibike"
             priority={true}
-            className={classes.img_section}
+            className={classes.location_image}
             aspectRatio="auto"
           />
         </div>
       </div>
-      <div className={classes.footer}></div>
     </div>
   );
 };

@@ -21,24 +21,64 @@ const StagesMobile = () => {
   }, []);
 
   return (
-    <div className={classes.big_container}>
-      <div className={classes.container_1}>
-        <div className={classes.section_title}>
-          <h3>Stages</h3>
-        </div>
-        <div className={classes.paragraph_container}>
-          <div className={classes.paragraph}>
-            <p className={classes.paragraph_phrase}>
+    <div className={classes.page_container}>
+      <div className={classes.page_title}>
+        <h3>Stages VTT</h3>
+      </div>
+
+      <div className={classes.content_wrapper}>
+        {/* --- Main Content Section --- */}
+        <div className={classes.main_section}>
+          <div className={classes.description_card}>
+            <p className={classes.description_text}>
               Nous vous proposons des stages sur trois, quatre et cinq
               demi-journées par semaine avec une progression all mountain,
               freeride et enduro.
             </p>
           </div>
-          <div className={classes.paragraph}>
-            <h6 className={classes.paragraph_title}>Réduction par élève :</h6>
-            <p>• 3 sorties - 10%</p>
-            <p>• 4 sorties -12%</p>
-            <p>• 5 sorties -15 %</p>
+
+          {/* --- Reductions Section --- */}
+          <div className={classes.reductions_section}>
+            <h4 className={classes.section_title}>Réduction par élève</h4>
+            <div className={classes.reductions_grid}>
+              <div className={classes.reduction_item}>
+                <span className={classes.reduction_number}>3</span>
+                <span className={classes.reduction_text}>sorties</span>
+                <span className={classes.reduction_percent}>-10%</span>
+              </div>
+              <div className={classes.reduction_item}>
+                <span className={classes.reduction_number}>4</span>
+                <span className={classes.reduction_text}>sorties</span>
+                <span className={classes.reduction_percent}>-12%</span>
+              </div>
+              <div className={classes.reduction_item}>
+                <span className={classes.reduction_number}>5</span>
+                <span className={classes.reduction_text}>sorties</span>
+                <span className={classes.reduction_percent}>-15%</span>
+              </div>
+            </div>
+          </div>
+
+          {/* --- Features Section --- */}
+          <div className={classes.features_section}>
+            <h4 className={classes.section_title}>Progression proposée</h4>
+            <div className={classes.features_grid}>
+              <div className={classes.feature_item}>
+                <div className={classes.feature_icon}>🏔️</div>
+                <h5>All Mountain</h5>
+                <p>Technique de base et progression en terrain varié</p>
+              </div>
+              <div className={classes.feature_item}>
+                <div className={classes.feature_icon}>🚵</div>
+                <h5>Freeride</h5>
+                <p>Descente et sauts pour les plus expérimentés</p>
+              </div>
+              <div className={classes.feature_item}>
+                <div className={classes.feature_icon}>⚡</div>
+                <h5>Enduro</h5>
+                <p>Sportif et technique pour tous niveaux</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -47,40 +87,84 @@ const StagesMobile = () => {
 };
 
 const StagesDesktop = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className={classes.big_container_big_device}>
-      <div className={classes.section_container}>
-        <div className={classes.section_1}>
-          <div className={classes.section_title}>
-            <h3>Stages</h3>
-          </div>
-          <div className={classes.paragraph_container}>
-            <div className={classes.paragraph}>
-              <p className={classes.paragraph_phrase}>
+    <div className={classes.page_container_desktop}>
+      <div className={classes.page_title}>
+        <h3>Stages VTT</h3>
+      </div>
+
+      <div className={classes.content_wrapper_desktop}>
+        <div className={classes.left_panel}>
+          <div className={classes.content_section}>
+            <div className={classes.description_card}>
+              <p className={classes.description_text}>
                 Nous vous proposons des stages sur trois, quatre et cinq
                 demi-journées par semaine avec une progression all mountain,
                 freeride et enduro.
               </p>
             </div>
-            <div className={classes.paragraph}>
-              <h6 className={classes.paragraph_title}>Réduction par élève :</h6>
-              <p>• 3 sorties - 10%</p>
-              <p>• 4 sorties -12%</p>
-              <p>• 5 sorties -15 %</p>
+
+            {/* --- Reductions Section --- */}
+            <div className={classes.reductions_section}>
+              <h4 className={classes.section_title}>Réduction par élève</h4>
+              <div className={classes.reductions_grid}>
+                <div className={classes.reduction_item}>
+                  <span className={classes.reduction_number}>3</span>
+                  <span className={classes.reduction_text}>sorties</span>
+                  <span className={classes.reduction_percent}>-10%</span>
+                </div>
+                <div className={classes.reduction_item}>
+                  <span className={classes.reduction_number}>4</span>
+                  <span className={classes.reduction_text}>sorties</span>
+                  <span className={classes.reduction_percent}>-12%</span>
+                </div>
+                <div className={classes.reduction_item}>
+                  <span className={classes.reduction_number}>5</span>
+                  <span className={classes.reduction_text}>sorties</span>
+                  <span className={classes.reduction_percent}>-15%</span>
+                </div>
+              </div>
+            </div>
+
+            {/* --- Features Section --- */}
+            <div className={classes.features_section}>
+              <h4 className={classes.section_title}>Progression proposée</h4>
+              <div className={classes.features_grid}>
+                <div className={classes.feature_item}>
+                  <div className={classes.feature_icon}>🏔️</div>
+                  <h5>All Mountain</h5>
+                  <p>Technique de base et progression en terrain varié</p>
+                </div>
+                <div className={classes.feature_item}>
+                  <div className={classes.feature_icon}>🚵</div>
+                  <h5>Freeride</h5>
+                  <p>Descente et sauts pour les plus expérimentés</p>
+                </div>
+                <div className={classes.feature_item}>
+                  <div className={classes.feature_icon}>⚡</div>
+                  <h5>Enduro</h5>
+                  <p>Sportif et technique pour tous niveaux</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div className={classes.section_2}>
+
+        <div className={classes.right_panel}>
           <LazyImage
-            src={featuredImages.stages} 
+            src={featuredImages.stages}
             alt="Stages VTT Tikibike"
             priority={true}
-            className={classes.img_section}
+            className={classes.stages_image}
             aspectRatio="auto"
           />
         </div>
       </div>
-      <div className={classes.footer}></div>
     </div>
   );
 };
