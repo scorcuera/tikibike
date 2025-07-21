@@ -84,7 +84,8 @@ a:hover, a:visited, a:link, a:active{
         height: 100%;
         width: 30rem;
         color: #043C53;
-        cursor:auto;
+        cursor: default; /* Cambiado de auto a default */
+        pointer-events: none; /* Desactivar clicks en desktop */
     }
 
     .navbar_pc{

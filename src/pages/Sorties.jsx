@@ -161,7 +161,7 @@ const SortiesDesktop = () => {
               </div>
             ))}
             
-            <Link className={classes.btnLink} to="/prices">  
+            <Link className={classes.btnLink} to="/prix">  
               <button className={classes.section_2_btn_prix}>Nos prix</button>
             </Link>
           </div>

@@ -39,7 +39,7 @@ function App() {
         <Route path="/location" element={<Location />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/galerie" element={<Galerie />} />
-        <Route path="/prices" element={<Prices />} />
+        <Route path="/prix" element={<Prices />} />
       </Routes>
     </Router>
   );

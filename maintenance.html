@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tikibike - Site en maintenance</title>
+    
+    <!-- Optimización para Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #043C53 0%, #0489A8 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFF7;
+        }
+
+        .maintenance-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+            background: rgba(255, 255, 247, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 2px solid #0489A8;
+            box-shadow: 0 20px 40px rgba(4, 60, 83, 0.3);
+            color: #043C53;
+        }
+
+        .logo-text {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #043C53;
+            text-shadow: 2px 2px 4px rgba(4, 137, 168, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 0.05rem;
+        }
+
+        .logo-img {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50%;
+            border: 4px solid #0489A8;
+            object-fit: cover;
+            animation: bounce 2s infinite;
+            box-shadow: 0 10px 20px rgba(4, 137, 168, 0.3);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            color: #043C53;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+            line-height: 1.6;
+            color: #043C53;
+            font-weight: 400;
+        }
+
+        .message {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            opacity: 0.7;
+            line-height: 1.5;
+            color: #043C53;
+            font-weight: 400;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            margin: 2rem auto;
+            border: 4px solid rgba(4, 137, 168, 0.3);
+            border-top: 4px solid #0489A8;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            color: #043C53;
+            font-weight: 400;
+        }
+
+        .contact-info a {
+            color: #0489A8;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(4, 137, 168, 0.5);
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            border-bottom-color: #0489A8;
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .maintenance-container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+
+            .title {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .logo-img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-container">
+        <img src="src/img/logo.jpg" alt="TikiBike Logo" class="logo-img">
+        
+        <div class="logo-text">TikiBike</div>
+        
+        <h1 class="title">Site en maintenance</h1>
+        
+        <p class="subtitle">
+            Nous travaillons actuellement sur l'amélioration de notre site web pour vous offrir une meilleure expérience.
+        </p>
+        
+        <p class="message">
+            Notre équipe met tout en œuvre pour rendre le site disponible le plus rapidement possible.<br>
+            Merci de votre patience et de votre compréhension.
+        </p>
+        
+        <div class="spinner"></div>
+        
+        <div class="contact-info">
+            Pour toute question urgente, vous pouvez nous contacter directement.<br>
+            <strong>Nous serons de retour très bientôt !</strong>
+        </div>
+    </div>
+</body>
+</html> 

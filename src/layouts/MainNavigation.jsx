@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { featuredImages } from '../assets/images';
@@ -6,9 +6,28 @@ import classes from "./MainNavigation.module.css";
 
 const MainNavigation = () => {
   const [showHamburgerItems, setShowHamburgerItems] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+      // Si cambiamos a desktop, cerrar el menú
+      if (window.innerWidth >= 768) {
+        setShowHamburgerItems(false);
+      }
+    };
+
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+    
+    return () => window.removeEventListener('resize', checkIfMobile);
+  }, []);
 
   const handleHamburgerMenu = () => {
-    setShowHamburgerItems(!showHamburgerItems);
+    // Solo permitir toggle en móviles
+    if (isMobile) {
+      setShowHamburgerItems(!showHamburgerItems);
+    }
   };
 
   const closeMenu = () => {
@@ -63,7 +82,7 @@ const MainNavigation = () => {
         </ul>
       </nav>
 
-      {showHamburgerItems && <MobileMenu items={navigationItems} onClose={closeMenu} />}
+      {showHamburgerItems && isMobile && <MobileMenu items={navigationItems} onClose={closeMenu} />}
     </div>
   );
 };
