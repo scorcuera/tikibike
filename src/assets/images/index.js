@@ -1,57 +1,57 @@
 // All Mountain Images
-import allMountain1 from '../../img/photos/allMountain/allMountain1.jpg';
-import allMountain2 from '../../img/photos/allMountain/allMountain2.jpg';
-import allMountain3 from '../../img/photos/allMountain/allMountain3.jpg';
-import allMountain4 from '../../img/photos/allMountain/allMountain4.jpg';
-import allMountain5 from '../../img/photos/allMountain/allMountain5.jpg';
-import allMountain6 from '../../img/photos/allMountain/allMountain6.jpg';
-import allMountain7 from '../../img/photos/allMountain/allMountain7.jpg';
-import allMountain8 from '../../img/photos/allMountain/allMountain8.jpg';
-import allMountain9 from '../../img/photos/allMountain/allMountain9.jpg';
-import allMountain10 from '../../img/photos/allMountain/allMountain10.jpg';
-import allMountain11 from '../../img/photos/allMountain/allMountain11.jpg';
+import allMountain1 from '@/img/photos/allMountain/allMountain1.jpg';
+import allMountain2 from '@/img/photos/allMountain/allMountain2.jpg';
+import allMountain3 from '@/img/photos/allMountain/allMountain3.jpg';
+import allMountain4 from '@/img/photos/allMountain/allMountain4.jpg';
+import allMountain5 from '@/img/photos/allMountain/allMountain5.jpg';
+import allMountain6 from '@/img/photos/allMountain/allMountain6.jpg';
+import allMountain7 from '@/img/photos/allMountain/allMountain7.jpg';
+import allMountain8 from '@/img/photos/allMountain/allMountain8.jpg';
+import allMountain9 from '@/img/photos/allMountain/allMountain9.jpg';
+import allMountain10 from '@/img/photos/allMountain/allMountain10.jpg';
+import allMountain11 from '@/img/photos/allMountain/allMountain11.jpg';
 
 // Enduro Images
-import enduro1 from '../../img/photos/enduro/enduro1.jpg';
-import enduro2 from '../../img/photos/enduro/enduro2.jpg';
-import enduro3 from '../../img/photos/enduro/enduro3.jpg';
-import enduro4 from '../../img/photos/enduro/enduro4.jpg';
-import enduro5 from '../../img/photos/enduro/enduro5.jpg';
-import enduro6 from '../../img/photos/enduro/enduro6.jpg';
-import enduro7 from '../../img/photos/enduro/enduro7.jpg';
-import enduro8 from '../../img/photos/enduro/enduro8.jpg';
+import enduro1 from '@/img/photos/enduro/enduro1.jpg';
+import enduro2 from '@/img/photos/enduro/enduro2.jpg';
+import enduro3 from '@/img/photos/enduro/enduro3.jpg';
+import enduro4 from '@/img/photos/enduro/enduro4.jpg';
+import enduro5 from '@/img/photos/enduro/enduro5.jpg';
+import enduro6 from '@/img/photos/enduro/enduro6.jpg';
+import enduro7 from '@/img/photos/enduro/enduro7.jpg';
+import enduro8 from '@/img/photos/enduro/enduro8.jpg';
 
 // Enfants Images
-import enfants1 from '../../img/photos/enfants/enfants1.jpg';
-import enfants2 from '../../img/photos/enfants/enfants2.jpg';
-import enfants3 from '../../img/photos/enfants/enfants3.jpg';
-import enfants4 from '../../img/photos/enfants/enfants4.jpg';
-import enfants5 from '../../img/photos/enfants/enfants5.jpg';
-import enfants6 from '../../img/photos/enfants/enfants6.jpg';
-import enfants7 from '../../img/photos/enfants/enfants7.jpg';
-import enfants8 from '../../img/photos/enfants/enfants8.jpg';
-import enfants9 from '../../img/photos/enfants/enfants9.jpg';
-import enfants10 from '../../img/photos/enfants/enfants10.jpg';
-import enfants11 from '../../img/photos/enfants/enfants11.jpg';
-import enfants12 from '../../img/photos/enfants/enfants12.jpg';
+import enfants1 from '@/img/photos/enfants/enfants1.jpg';
+import enfants2 from '@/img/photos/enfants/enfants2.jpg';
+import enfants3 from '@/img/photos/enfants/enfants3.jpg';
+import enfants4 from '@/img/photos/enfants/enfants4.jpg';
+import enfants5 from '@/img/photos/enfants/enfants5.jpg';
+import enfants6 from '@/img/photos/enfants/enfants6.jpg';
+import enfants7 from '@/img/photos/enfants/enfants7.jpg';
+import enfants8 from '@/img/photos/enfants/enfants8.jpg';
+import enfants9 from '@/img/photos/enfants/enfants9.jpg';
+import enfants10 from '@/img/photos/enfants/enfants10.jpg';
+import enfants11 from '@/img/photos/enfants/enfants11.jpg';
+import enfants12 from '@/img/photos/enfants/enfants12.jpg';
 
 // Freeride Images
-import freeride1 from '../../img/photos/freeRide/freeride1.jpg';
-import freeride2 from '../../img/photos/freeRide/freeride2.jpg';
-import freeride3 from '../../img/photos/freeRide/freeride3.jpg';
-import freeride4 from '../../img/photos/freeRide/freeride4.jpg';
-import freeride5 from '../../img/photos/freeRide/freeride5.jpg';
-import freeride6 from '../../img/photos/freeRide/freeride6.jpg';
-import freeride7 from '../../img/photos/freeRide/freeride7.jpg';
-import freeride8 from '../../img/photos/freeRide/freeride8.jpg';
-import freeride9 from '../../img/photos/freeRide/freeride9.jpg';
-import freeride10 from '../../img/photos/freeRide/freeride10.jpg';
-import freeride11 from '../../img/photos/freeRide/freeride11.jpg';
+import freeride1 from '@/img/photos/freeRide/freeride1.jpg';
+import freeride2 from '@/img/photos/freeRide/freeride2.jpg';
+import freeride3 from '@/img/photos/freeRide/freeride3.jpg';
+import freeride4 from '@/img/photos/freeRide/freeride4.jpg';
+import freeride5 from '@/img/photos/freeRide/freeride5.jpg';
+import freeride6 from '@/img/photos/freeRide/freeride6.jpg';
+import freeride7 from '@/img/photos/freeRide/freeride7.jpg';
+import freeride8 from '@/img/photos/freeRide/freeride8.jpg';
+import freeride9 from '@/img/photos/freeRide/freeride9.jpg';
+import freeride10 from '@/img/photos/freeRide/freeride10.jpg';
+import freeride11 from '@/img/photos/freeRide/freeride11.jpg';
 
 // Other Images
-import backgroundImg from '../../img/background-img.jpg';
-import logo from '../../img/logo.jpg';
-import prix from '../../img/prix.png';
+import backgroundImg from '@/img/background-img.jpg';
+import logo from '@/img/logo.jpg';
+import prix from '@/img/prix.png';
 
 // Organized by categories
 export const allMountainImages = [

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import useResponsive from "../hooks/useResponsive";
-import LazyImage from '../components/LazyImage.jsx';
-import { featuredImages } from '../assets/images';
+import LazyImage from '@/components/LazyImage.jsx';
+import { featuredImages } from '@/assets/images';
 import classes from "./Accueil.module.css";
 
 const Accueil = () => {

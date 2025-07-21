@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { featuredImages } from '../assets/images';
+import { featuredImages } from '@/assets/images';
 import classes from "./MainNavigation.module.css";
 
 const MainNavigation = () => {

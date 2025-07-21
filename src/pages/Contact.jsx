@@ -1,5 +1,5 @@
-import ResponsiveLayout from '../components/ResponsiveLayout.jsx';
-import { featuredImages } from '../assets/images';
+import ResponsiveLayout from '@/components/ResponsiveLayout.jsx';
+import { featuredImages } from '@/assets/images';
 import classes from "./Contact.module.css";
 
 const Contact = () => {

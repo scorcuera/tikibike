@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { featuredImages } from './assets/images';
+import { featuredImages } from '@/assets/images';
 import useImagePrefetch from './hooks/useImagePrefetch.js';
 import './App.css';
 

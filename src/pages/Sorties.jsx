@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import PageContainer from '../components/PageContainer.jsx';
+import PageContainer from '@/components/PageContainer.jsx';
 import classes from './Sorties.module.css';
 
 // --- Data Structure ---

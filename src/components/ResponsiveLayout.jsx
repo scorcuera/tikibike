@@ -1,4 +1,4 @@
-import useResponsive from '../hooks/useResponsive';
+import useResponsive from '@/hooks/useResponsive';
 
 const ResponsiveLayout = ({ 
   mobileComponent: MobileComponent, 

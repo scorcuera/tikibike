@@ -1,8 +1,8 @@
-import { galleryImages } from '../assets/images/index.js';
-import VirtualizedGallery from '../components/VirtualizedGallery.jsx';
-import useImagePrefetch from '../hooks/useImagePrefetch.js';
+import { galleryImages } from '@/assets/images/index.js';
+import VirtualizedGallery from '@/components/VirtualizedGallery.jsx';
+import useImagePrefetch from '@/hooks/useImagePrefetch.js';
 import classes from "./Galerie.module.css";
-import PageContainer from '../components/PageContainer.jsx';
+import PageContainer from '@/components/PageContainer.jsx';
 
 const Galerie = () => {
   // Prefetch gallery images for better performance
