@@ -7,7 +7,9 @@ const LazyImage = ({
   className = '', 
   style = {}, 
   aspectRatio = '1/1',
-  priority = false 
+  priority = false,
+  preload = false,
+  fetchPriority = 'auto'
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isInView, setIsInView] = useState(priority); // Priority images load immediately
@@ -45,6 +47,21 @@ const LazyImage = ({
       observerRef.current?.disconnect();
     };
   }, [priority]);
+
+  // Preload image for priority images
+  useEffect(() => {
+    if (preload && src) {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = src;
+      document.head.appendChild(link);
+      
+      return () => {
+        document.head.removeChild(link);
+      };
+    }
+  }, [preload, src]);
 
   const handleLoad = () => {
     setIsLoaded(true);
@@ -92,6 +109,7 @@ const LazyImage = ({
           onError={handleError}
           loading={priority ? 'eager' : 'lazy'}
           decoding="async"
+          fetchPriority={fetchPriority}
         />
       )}
     </div>

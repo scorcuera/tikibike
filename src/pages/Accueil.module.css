@@ -4,15 +4,18 @@
     background-color: #043C53; 
     height: 90vh;
     max-width: 100vw;
+    will-change: transform; /* Optimización para GPU */
 }
 
 .background_img{
     z-index: -4;
     width: 100%;
     height: 90vh;
-    object-fit:cover;
+    object-fit: cover;
     object-position: 70% 0%;
-    
+    will-change: transform; /* Optimización para GPU */
+    image-rendering: -webkit-optimize-contrast; /* Optimización de renderizado */
+    image-rendering: crisp-edges;
 }
 
 .background_layer{
@@ -22,6 +25,7 @@
     height: 100%;
     top: 0%;
     background-color: rgb(4, 60, 83, 0.3);
+    will-change: transform; /* Optimización para GPU */
 }
 
 .main_text{
@@ -31,6 +35,7 @@
     font-weight: 600;
     top: 10%;
     left: 5%;
+    will-change: transform; /* Optimización para GPU */
 }
 
 .brand_name{
@@ -38,6 +43,12 @@
     font-size: 3rem;
     font-weight: 800;
     padding-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Mejor legibilidad */
+}
+
+.brand_subtitle{
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Mejor legibilidad */
 }
 
 .footer_layer{
@@ -49,7 +60,7 @@
     bottom:0%;
     width: 100%;
     height: 8vh;
-
+    will-change: transform; /* Optimización para GPU */
 }
 
 .button_footer{
@@ -61,6 +72,7 @@
     background: #0489A8;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
     transition: all ease 0.5s;
+    will-change: transform; /* Optimización para GPU */
 }
 
 .button_footer:hover{
@@ -103,4 +115,19 @@
       
     }
     
+}
+
+/* Optimizaciones para dispositivos móviles */
+@media screen and (max-width: 767px) {
+    .brand_name {
+        font-size: 2.5rem;
+    }
+    
+    .brand_subtitle {
+        font-size: 1rem;
+    }
+    
+    .background_img {
+        object-position: center 20%; /* Mejor posicionamiento para móvil */
+    }
 }
