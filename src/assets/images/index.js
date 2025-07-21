@@ -120,7 +120,7 @@ export const galleryImages = [
 export const featuredImages = {
   stages: allMountain6, // Featured image for stages page (changed from allMountain11 to allMountain1 for better performance)
   location: allMountain2, // Featured image for location page
-  background: backgroundImg, // Use smaller image for mobile background (524KB instead of backgroundImg)
+  background: allMountain1, // Use smaller image for mobile background (524KB instead of backgroundImg)
   backgroundMedium: allMountain1, // Use same optimized image for medium devices
   logo,
   prix,
