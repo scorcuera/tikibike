@@ -36,17 +36,17 @@ import enfants11 from '@/img/photos/enfants/enfants11.jpg';
 import enfants12 from '@/img/photos/enfants/enfants12.jpg';
 
 // Freeride Images
-import freeride1 from '@/img/photos/freeRide/freeride1.jpg';
-import freeride2 from '@/img/photos/freeRide/freeride2.jpg';
-import freeride3 from '@/img/photos/freeRide/freeride3.jpg';
-import freeride4 from '@/img/photos/freeRide/freeride4.jpg';
-import freeride5 from '@/img/photos/freeRide/freeride5.jpg';
-import freeride6 from '@/img/photos/freeRide/freeride6.jpg';
-import freeride7 from '@/img/photos/freeRide/freeride7.jpg';
-import freeride8 from '@/img/photos/freeRide/freeride8.jpg';
-import freeride9 from '@/img/photos/freeRide/freeride9.jpg';
-import freeride10 from '@/img/photos/freeRide/freeride10.jpg';
-import freeride11 from '@/img/photos/freeRide/freeride11.jpg';
+import freeride1 from '@/img/photos/freeride/freeride1.jpg';
+import freeride2 from '@/img/photos/freeride/freeride2.jpg';
+import freeride3 from '@/img/photos/freeride/freeride3.jpg';
+import freeride4 from '@/img/photos/freeride/freeride4.jpg';
+import freeride5 from '@/img/photos/freeride/freeride5.jpg';
+import freeride6 from '@/img/photos/freeride/freeride6.jpg';
+import freeride7 from '@/img/photos/freeride/freeride7.jpg';
+import freeride8 from '@/img/photos/freeride/freeride8.jpg';
+import freeride9 from '@/img/photos/freeride/freeride9.jpg';
+import freeride10 from '@/img/photos/freeride/freeride10.jpg';
+import freeride11 from '@/img/photos/freeride/freeride11.jpg';
 
 // Other Images
 import backgroundImg from '@/img/background-img.jpg';
