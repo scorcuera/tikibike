@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { featuredImages } from '../assets/images';
 import classes from "./MainNavigation.module.css";
@@ -7,6 +7,7 @@ import classes from "./MainNavigation.module.css";
 const MainNavigation = () => {
   const [showHamburgerItems, setShowHamburgerItems] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const checkIfMobile = () => {
@@ -32,6 +33,12 @@ const MainNavigation = () => {
 
   const closeMenu = () => {
     setShowHamburgerItems(false);
+  };
+
+  const isActive = (path) => {
+    if (path === "/" && location.pathname === "/") return true;
+    if (path !== "/" && location.pathname.startsWith(path)) return true;
+    return false;
   };
 
   const navigationItems = [
@@ -74,7 +81,10 @@ const MainNavigation = () => {
         <ul className={classes.navbar_pc}>
           {navigationItems.map(({ path, label }) => (
             <li key={path}>
-              <Link className={classes.navbar_pc_link} to={path}>
+              <Link 
+                className={`${classes.navbar_pc_link} ${isActive(path) ? classes.active : ''}`} 
+                to={path}
+              >
                 <span className={classes.navbar_pc_item}>{label}</span>
               </Link>
             </li>
@@ -82,18 +92,28 @@ const MainNavigation = () => {
         </ul>
       </nav>
 
-      {showHamburgerItems && isMobile && <MobileMenu items={navigationItems} onClose={closeMenu} />}
+      {showHamburgerItems && isMobile && <MobileMenu items={navigationItems} onClose={closeMenu} location={location} />}
     </div>
   );
 };
 
-const MobileMenu = ({ items, onClose }) => {
+const MobileMenu = ({ items, onClose, location }) => {
+  const isActive = (path) => {
+    if (path === "/" && location.pathname === "/") return true;
+    if (path !== "/" && location.pathname.startsWith(path)) return true;
+    return false;
+  };
+
   return (
     <div className={classes.navBar}>
       <ul className={classes.nav_items}>
         {items.map(({ path, label }) => (
           <li key={path}>
-            <Link to={path} onClick={onClose}>
+            <Link 
+              to={path} 
+              onClick={onClose}
+              className={isActive(path) ? classes.active_mobile : ''}
+            >
               <span className={classes.nav_item}>
                 {label === "Galerie" ? "Galerie de photos" : label}
               </span>

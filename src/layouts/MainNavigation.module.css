@@ -45,6 +45,23 @@ a:hover, a:visited, a:link, a:active{
     justify-content: space-around;
 }
 
+.nav_items a {
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.nav_items a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav_items a.active_mobile {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 .nav_item{
     text-decoration: none;
     z-index: 100;
@@ -99,6 +116,28 @@ a:hover, a:visited, a:link, a:active{
 
     .navbar_pc_link{
         text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        padding: 0 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .navbar_pc_link:hover {
+        background-color: #043C53;
+    }
+
+    .navbar_pc_link:hover .navbar_pc_item {
+        color: #F3E622;
+    }
+
+    .navbar_pc_link.active {
+        background-color: #043C53;
+    }
+
+    .navbar_pc_link.active .navbar_pc_item {
+        color: #F3E622;
     }
     
     .navbar_pc_item{
@@ -107,11 +146,7 @@ a:hover, a:visited, a:link, a:active{
         font-size: 1.2rem;
         font-weight: 600;
         padding-right: 2rem;
-    }
-
-    .navbar_pc_item:hover{
-       color:#F3E622;
-       transition: all ease 0.3s;
+        transition: color 0.3s ease;
     }
 
     .logo_img{
