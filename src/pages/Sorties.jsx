@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import PageContainer from '../components/PageContainer.jsx';
 import classes from './Sorties.module.css';
 
@@ -98,6 +99,13 @@ const Sorties = () => {
               ))}
             </tbody>
           </table>
+        </div>
+
+        {/* --- Prix Button --- */}
+        <div className={classes.prix_button_container}>
+          <Link to="/prix" className={classes.prix_button}>
+            Nos prix
+          </Link>
         </div>
 
         {/* --- Inclus Section --- */}
