@@ -86,7 +86,7 @@ const LocationDesktop = () => {
         </div>
         <div className={classes.section_2}>
           <LazyImage
-            src={featuredImages.location}
+            src={featuredImages.location} 
             alt="Location VTT Tikibike"
             priority={true}
             className={classes.img_section}

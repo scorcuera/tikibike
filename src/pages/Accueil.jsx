@@ -17,12 +17,12 @@ const Accueil = () => {
       
       <div className={classes.background_img_container}>
         <LazyImage
-          src={isSmallDevice ? featuredImages.background : featuredImages.backgroundMedium}
-          alt="Tikibike - École de vélo du pays des Écrins"
+        src={isSmallDevice ? featuredImages.background : featuredImages.backgroundMedium}
+        alt="Tikibike - École de vélo du pays des Écrins"
           priority={true}
           className={classes.background_img}
           aspectRatio="auto"
-        />
+      />
       </div>
       
       <div className={classes.footer_layer}>

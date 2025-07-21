@@ -66,7 +66,7 @@ const StagesDesktop = () => {
         </div>
         <div className={classes.section_2}>
           <LazyImage
-            src={featuredImages.stages}
+            src={featuredImages.stages} 
             alt="Stages VTT Tikibike"
             priority={true}
             className={classes.img_section}
