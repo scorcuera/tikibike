@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageContainer from '@/components/PageContainer.jsx';
 import classes from './Sorties.module.css';
@@ -35,6 +36,11 @@ const sortiesData = {
 };
 
 const Sorties = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={classes.page_container}>
       <div className={classes.page_title}>

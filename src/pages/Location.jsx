@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import ResponsiveLayout from '@/components/ResponsiveLayout.jsx';
 import LazyImage from '@/components/LazyImage.jsx';
@@ -14,6 +15,11 @@ const Location = () => {
 };
 
 const LocationMobile = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={classes.big_container}>
       <div className={classes.container_1}>

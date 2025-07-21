@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import ResponsiveLayout from '@/components/ResponsiveLayout.jsx';
 import { featuredImages } from '@/assets/images';
 import classes from "./Contact.module.css";
@@ -12,6 +13,11 @@ const Contact = () => {
 };
 
 const ContactMobile = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={classes.big_container}>
       <div className={classes.container_1}>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { IoChevronDown } from 'react-icons/io5';
 import classes from './Prices.module.css';
 
@@ -54,6 +54,11 @@ const priceData = {
 
 const Prices = () => {
   const [openCategory, setOpenCategory] = useState(priceData.categories[0].id);
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const toggleCategory = (categoryId) => {
     setOpenCategory(openCategory === categoryId ? null : categoryId);

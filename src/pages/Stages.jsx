@@ -1,4 +1,5 @@
 
+import { useEffect } from 'react';
 import ResponsiveLayout from '@/components/ResponsiveLayout.jsx';
 import LazyImage from '@/components/LazyImage.jsx';
 import { featuredImages } from '@/assets/images';
@@ -14,6 +15,11 @@ const Stages = () => {
 };
 
 const StagesMobile = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={classes.big_container}>
       <div className={classes.container_1}>
