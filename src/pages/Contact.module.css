@@ -1,150 +1,285 @@
-.big_container{
-    position: relative;
-    background-color: white; 
-    height: auto;
-    max-width: 100vw;
+/* --- General Page Styles --- */
+.page_container {
+  background-color: #043C53;
+  min-height: 100vh;
+  color: #FFFFF7;
+  display: flex;
+  flex-direction: column;
 }
 
-.container_1{
-    height: 90vh;
-    color: #043C53;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: space-around;
-   
+.page_title {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  font-size: 2rem;
+  background-color: #043C53;
 }
 
-.section_title{
-    
-    margin: 0 auto;
-    padding: 1.5rem
-    0rem 0.5rem 0rem;
-    font-size: 2rem;
-    color: #0489A8;
-    
-
+.page_title h3 {
+  margin: 0;
+  font-weight: bold;
+  color: #F3E622;
 }
 
-
-.logo_img{
-    padding-bottom: 0.8rem;
-    width: 7rem;
-
+/* --- Map Section --- */
+.map_section {
+  width: 90vw;
+  height: 30vh;
+  margin: 0 auto 2rem auto;
 }
 
-.container_map{
-    width: 90vw;
-    height: 30vh;
-}
-.map{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.map {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.paragraph_container{
-    display: flex;
-    height: 90%;
+/* --- Info Section Mobile --- */
+.info_section {
+  padding: 0 1.5rem 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.location_info {
+  text-align: center;
+}
+
+.location_highlight {
+  font-style: italic;
+  color: #F3E622;
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.address {
+  margin: 0;
+  color: #FFFFF7;
+}
+
+.contact_info {
+  text-align: center;
+}
+
+.info_title {
+  font-weight: 800;
+  color: #F3E622;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+}
+
+.contact_details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact_text {
+  color: #FFFFF7;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.additional_info {
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.additional_info p {
+  margin: 0.5rem 0;
+  color: #FFFFF7;
+}
+
+.additional_info strong {
+  color: #F3E622;
+}
+
+/* --- Desktop Layout --- */
+.page_container_desktop {
+  background-color: white;
+  min-height: 100vh;
+}
+
+.content_wrapper_desktop {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.left_panel {
+  height: 100%;
+  width: 60%;
+  background-color: #043C53;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map_section_desktop {
+  width: 90%;
+  height: 70%;
+}
+
+.map_desktop {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.right_panel {
+  height: 100%;
+  width: 40%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* --- Info Section Desktop - Simplified and Clean --- */
+.info_section_desktop {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.info_section_desktop .location_info {
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f8f9fa;
+}
+
+.info_section_desktop .location_highlight {
+  color: #043C53;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  font-style: italic;
+}
+
+.info_section_desktop .address {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.info_section_desktop .contact_info {
+  text-align: left;
+}
+
+.info_section_desktop .info_title {
+  color: #043C53;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.info_section_desktop .contact_details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info_section_desktop .contact_text {
+  color: #0489A8;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  border-left: 4px solid #0489A8;
+}
+
+.info_section_desktop .additional_info {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.8;
+  padding-top: 1rem;
+  border-top: 2px solid #f8f9fa;
+}
+
+.info_section_desktop .additional_info p {
+  margin: 0.8rem 0;
+  color: #6c757d;
+}
+
+.info_section_desktop .additional_info strong {
+  color: #043C53;
+  font-weight: 600;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .page_title {
+    padding: 1.5rem 0 1rem 0;
+    font-size: 1.8rem;
+  }
+
+  .info_section {
+    padding: 0 1rem 2rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .location_highlight {
+    font-size: 1rem;
+  }
+
+  .info_title {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .content_wrapper_desktop {
     flex-direction: column;
-    align-content: stretch;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.5rem;
-    font-size: 0.8rem;
-}
+  }
 
-.paragraph_phrase{
-    font-style: italic;
-    color: #978f15;
-}
-
-.paragraph_title{
-    padding-top: 0.5rem;
-    font-weight: 800;
-}
-
-/* classes for big devices */
-
-.big_container_big_device{
-    position: relative;
-    background-color: white; 
-    height: auto;
-    max-width: 100vw;
-    height: 90vh;
-}
-
-.footer{
-    height: 5vh;
+  .left_panel {
     width: 100%;
-    background-color: #0B111D;
-    position: absolute;
-    bottom: 0%;
-}
+    height: 50%;
+  }
 
-.section_container{
-    height: 100%;
+  .right_panel {
     width: 100%;
-    display: flex;
+    height: 50%;
+    padding: 1rem;
+  }
+
+  .map_desktop {
+    height: 80%;
+  }
+
+  .info_section_desktop {
+    gap: 1.5rem;
+  }
 }
 
-.section_1{
-    height: 100%;
-    width: 60%;
-    background-color: #043C53;
+/* --- Animation --- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.section_2{
-    height: 100%;
-    width: 40%;
-    background-color: white;
-}
-
-@media screen and (min-width: 768px){
-
-    .section_title{
-    
-    display: flex;
-    justify-content: center;
-    padding: 2rem
-    0rem 2rem 0rem;
-    font-size: 2rem;
-    color: #F3E622;
-
-    }
-    .section_title h3{
-        font-size: 3rem;
-    }
-
-    .container_map{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 70%;
-    }
-    .map{
-        
-        width: 90%;
-        height: 100%;
-        overflow: hidden;
-    }
-
-
-    .paragraph_container{
-        height: 60%;
-        line-height: 2rem;
-        font-size: 1rem;
-    }
-
-    .container_logo{
-        height: 40%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .logo_img{
-        padding-bottom: 0.5rem;
-        width: 10rem;
-    
-    }
+.info_section,
+.info_section_desktop {
+  animation: fadeIn 0.6s ease-out;
 }
