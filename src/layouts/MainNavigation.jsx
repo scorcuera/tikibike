@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
 import { featuredImages } from '@/assets/images';
 import classes from "./MainNavigation.module.css";
 
@@ -72,10 +73,17 @@ const MainNavigation = () => {
               : null
           }
         >
-          <GiHamburgerMenu
-            className={classes.hamburger_icon}
-            size={28}
-          />
+          {showHamburgerItems ? (
+            <IoClose
+              className={classes.hamburger_icon}
+              size={32}
+            />
+          ) : (
+            <GiHamburgerMenu
+              className={classes.hamburger_icon}
+              size={32}
+            />
+          )}
         </div>
 
         <ul className={classes.navbar_pc}>

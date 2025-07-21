@@ -5,7 +5,7 @@ a:hover, a:visited, a:link, a:active{
 }
 
 .logo_img{
-    width: 3rem;
+    width: 3.5rem; /* Aumentado de 3rem a 3.5rem para móvil */
 
 }
 
@@ -83,6 +83,11 @@ a:hover, a:visited, a:link, a:active{
     color: #043C53;
     cursor: pointer;
     
+}
+
+/* Tamaño del icono hamburguesa en móvil */
+.hamburger_icon {
+    font-size: 2rem; /* Aumentado el tamaño del icono */
 }
 
 .navbar_pc{
