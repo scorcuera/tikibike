@@ -58,28 +58,6 @@ const StagesMobile = () => {
               </div>
             </div>
           </div>
-
-          {/* --- Features Section --- */}
-          <div className={classes.features_section}>
-            <h4 className={classes.section_title}>Progression proposée</h4>
-            <div className={classes.features_grid}>
-              <div className={classes.feature_item}>
-                <div className={classes.feature_icon}>🏔️</div>
-                <h5>All Mountain</h5>
-                <p>Technique de base et progression en terrain varié</p>
-              </div>
-              <div className={classes.feature_item}>
-                <div className={classes.feature_icon}>🚵</div>
-                <h5>Freeride</h5>
-                <p>Descente et sauts pour les plus expérimentés</p>
-              </div>
-              <div className={classes.feature_item}>
-                <div className={classes.feature_icon}>⚡</div>
-                <h5>Enduro</h5>
-                <p>Sportif et technique pour tous niveaux</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
