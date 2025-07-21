@@ -1,64 +1,45 @@
-.big_container {
-    position: relative;
-  background-color: white; 
-  height: 100vh;
-    max-width: 100vw;
-  display: flex;
-  flex-direction: column;
+.page_container {
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Un fondo suave para la página */
 }
 
-.container_1 {
-  height: 100%;
-  color: #043C53;
-    display: flex;
-  flex-direction: column;
-  padding: 0 1rem;
-}
-
-.section_title {
+.page_title {
   text-align: center;
   padding: 2rem 0 1rem 0;
-    font-size: 2rem;
-    color: #F3E622;
+  font-size: 2rem;
   background-color: #043C53;
-  margin: 0 -1rem 1rem -1rem;
+  margin: 0 0 2rem 0;
 }
 
-.section_title h3 {
+.page_title h3 {
   margin: 0;
   font-weight: bold;
+  color: #F3E622;
 }
 
 .gallery_wrapper {
-  flex: 1;
-  min-height: 0; /* Important for flexbox child to be scrollable */
-  position: relative;
-  overflow: hidden;
+  padding: 0 1rem 2rem 1rem;
 }
 
-.optimized_gallery {
-  height: 100%;
+@media (min-width: 768px) {
+  .gallery_wrapper {
+    padding: 0 4rem 3rem 4rem;
+  }
+}
+
+.page_footer_spacer {
+  height: 10vh; /* Un 10% de la altura de la pantalla como espacio */
   width: 100%;
-}
-
-/* Legacy grid styles - removed, now using virtualized gallery */
-.grid_container {
-  display: none; /* Hide old grid */
-}
-
-.grid_item {
-  display: none; /* Hide old grid items */
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
-  .container_1 {
-    padding: 0 0.5rem;
-}
-
-  .section_title {
-    margin: 0 -0.5rem 1rem -0.5rem;
+  .page_title {
     padding: 1.5rem 0 1rem 0;
     font-size: 1.8rem;
-    }
+  }
+  
+  .gallery_wrapper {
+    padding: 0 0.5rem 2rem 0.5rem;
+  }
 }

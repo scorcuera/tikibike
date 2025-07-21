@@ -16,19 +16,19 @@
 }
 
 .virtualized-gallery-item {
-  transition: transform 0.2s ease-out;
+  transition: filter 0.2s ease-out;
   cursor: pointer;
 }
 
 .virtualized-gallery-item:hover {
-  transform: scale(1.02);
+  filter: brightness(1.1); /* Efecto visual sin afectar layout */
   z-index: 2;
 }
 
 .gallery-image {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 .gallery-image.clickable {
@@ -36,7 +36,8 @@
 }
 
 .gallery-image:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Shadow más pronunciada */
+  transform: translateY(-2px); /* Sutil elevación sin cambiar tamaño */
 }
 
 .virtualized-gallery-loading {
@@ -79,37 +80,19 @@
   }
 }
 
-/* Custom scrollbar */
-.virtualized-gallery::-webkit-scrollbar {
-  width: 8px;
-}
-
-.virtualized-gallery::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 4px;
-}
-
-.virtualized-gallery::-webkit-scrollbar-thumb {
-  background: #043C53;
-  border-radius: 4px;
-}
-
-.virtualized-gallery::-webkit-scrollbar-thumb:hover {
-  background: #0489A8;
-}
-
 /* Mobile optimizations */
 @media (max-width: 768px) {
   .virtualized-gallery-item:hover {
-    transform: scale(1.01); /* Less aggressive scaling on mobile */
+    filter: brightness(1.05); /* Efecto más sutil en móviles */
   }
   
   .gallery-image {
     border-radius: 6px;
   }
   
-  .virtualized-gallery::-webkit-scrollbar {
-    width: 4px;
+  .gallery-image:hover {
+    transform: translateY(-1px); /* Elevación más sutil en móviles */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   }
   
   .virtualized-gallery-stats {
