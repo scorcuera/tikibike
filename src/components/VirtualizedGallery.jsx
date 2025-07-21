@@ -138,7 +138,7 @@ const VirtualizedGallery = ({
               <LazyImage
                 src={item.src}
                 alt={item.alt}
-                priority={idx < 6} // Prioritize first 6 images
+                priority={true} /* Cambiado de idx < 6 a true */
                 aspectRatio="1/1"
                 className="gallery-image clickable"
               />
