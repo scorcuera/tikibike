@@ -42,6 +42,9 @@ const ContactMobile = () => {
           <p className={classes.location_highlight}>
             À l'entrée de Vallouise en face de la pharmacie
           </p>
+          <p className={classes.location_highlight}>
+            À côté de la boulangerie Mounie
+          </p>
           <p className={classes.address}>Le Saint Genest 05290 Vallouise</p>
         </div>
 
@@ -102,6 +105,9 @@ const ContactDesktop = () => {
             <div className={classes.location_info}>
               <p className={classes.location_highlight}>
                 À l'entrée de Vallouise en face de la pharmacie
+              </p>
+              <p className={classes.location_highlight}>
+                À côté de la boulangerie Mounie
               </p>
               <p className={classes.address}>Le Saint Genest 05290 Vallouise</p>
             </div>
