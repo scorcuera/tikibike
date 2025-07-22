@@ -110,7 +110,7 @@ const Sorties = () => {
         {/* --- Prix Button --- */}
         <div className={classes.prix_button_container}>
           <Link to="/prix" className={classes.prix_button}>
-            Nos prix
+            Nos prix de location
           </Link>
         </div>
 
